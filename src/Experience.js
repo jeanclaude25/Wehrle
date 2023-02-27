@@ -4,7 +4,7 @@ import { Suspense, useRef } from 'react'
 // import Placeholder from './Placeholder.js'
 import Effects from './Effects.js'
 import CubeSphere from './CubeSphereOb.js'
-import Wehrle_curve from './Wehrle_cuve.js'
+import Model from './Wehrle_cuve.js'
 // import { useFrame } from '@react-three/fiber'
 
 export default function Experience()
@@ -32,12 +32,12 @@ export default function Experience()
         
             <Stage 
                     adjustCamera = {false}
-                    intensity={10.5}
+                    intensity={1.5}
                     shadows="contact"
                     preset='portrait'
                     environment="city">
 
-            <Wehrle_curve/>
+            <Model/>
             </Stage>
             {/* <CubeSphere/> */}
         </Suspense>
