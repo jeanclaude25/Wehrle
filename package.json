@@ -2,7 +2,7 @@
   "name": "exercise",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "dev": "react-scripts start",
     "start": "react-scripts start",
@@ -15,7 +15,7 @@
     "@react-three/drei": "^9.32.3",
     "@react-three/fiber": "^8.8.7",
     "@react-three/postprocessing": "^2.6.2",
-    "leva": "^0.9.31",
+    "leva": "^0.9.34",
     "r3f-perf": "^6.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

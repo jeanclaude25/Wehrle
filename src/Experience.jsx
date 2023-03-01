@@ -2,9 +2,8 @@ import { OrbitControls, Stage } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
 import { Suspense, useRef } from 'react'
 // import Placeholder from './Placeholder.js'
-import Effects from './Effects.js'
-import CubeSphere from './CubeSphereOb.js'
-import Model from './Wehrle_cuve.js'
+import Effects from './Effects.jsx'
+import Model from './Wehrle_cuve.jsx'
 // import { useFrame } from '@react-three/fiber'
 
 export default function Experience()
@@ -24,18 +23,18 @@ export default function Experience()
 
         <OrbitControls ref={orbitRef} makeDefault regress/>
 
-        <directionalLight castShadow position={ [ 0, 10, 0 ] } intensity={ 10.5 } shadow-normalBias={ 0.04 } />
-        <ambientLight intensity={ 0.5 } />
+        {/* <directionalLight castShadow position={ [ 0, 10, 0 ] } intensity={ 10.5 } shadow-normalBias={ 0.04 } /> */}
+        {/* <ambientLight intensity={ 0.5 } /> */}
 
 
         <Suspense fallback={<></>}>
         
             <Stage 
                     adjustCamera = {false}
-                    intensity={1.5}
-                    shadows="contact"
-                    preset='portrait'
-                    environment="city">
+                    intensity = {0.2}
+                    shadows = {false}
+                    preset = 'portrait'
+                    environment="forest">
 
             <Model/>
             </Stage>
