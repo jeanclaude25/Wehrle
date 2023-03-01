@@ -3,6 +3,7 @@ import { Perf } from 'r3f-perf'
 import { Suspense, useRef } from 'react'
 // import Placeholder from './Placeholder.js'
 import Effects from './Effects.jsx'
+import Watch from './Watch.js'
 import Model from './Wehrle_cuve.jsx'
 // import { useFrame } from '@react-three/fiber'
 
@@ -37,7 +38,9 @@ export default function Experience()
                     environment="forest">
 
             <Model/>
+            {/* <Watch/> */}
             </Stage>
+            
             {/* <CubeSphere/> */}
         </Suspense>
         
