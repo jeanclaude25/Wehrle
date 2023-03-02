@@ -74,11 +74,11 @@ export default function Model(props) {
     new THREE.Vector3(19.17, 4.68, 49.69)
   ])
   const expulsRotValeur = useMemo(() => [
-    [0,0,0],
+    [0, 0, 0],
     [0, 0, Math.PI],
-    [0,0,0],
+    [0, 0, 0],
     [0, 0, Math.PI],
-    [0,0,0],
+    [0, 0, 0],
     [0, 0, Math.PI],
     [0, 0, Math.PI],
     [Math.PI, 0, Math.PI],
@@ -88,9 +88,108 @@ export default function Model(props) {
     [Math.PI, 0, Math.PI],
     [-Math.PI, 0, 0],
     [-Math.PI, 0, 0],
+    [Math.PI, 0, Math.PI],
     [Math.PI, 0, Math.PI]
   ])
 
+  const cerjointValeur = useMemo(() => [
+    new THREE.Vector3(12.95, 14.06, 35.41),
+    new THREE.Vector3(12.93, 4.06, 50.42),
+    new THREE.Vector3(18.83, 4.06, 35.42),
+    new THREE.Vector3(18.83, 10.06, 35.42),
+    new THREE.Vector3(18.83, 12.06, 35.42),
+    new THREE.Vector3(18.83, 14.06, 35.42),
+    new THREE.Vector3(18.81, 4.06, 50.43),
+    new THREE.Vector3(18.81, 12.06, 50.43),
+    new THREE.Vector3(18.81, 14.06, 50.43),
+    new THREE.Vector3(18.81, 10.06, 50.43),
+    new THREE.Vector3(18.81, 8.06, 50.43),
+    new THREE.Vector3(18.83, 8.06, 35.42),
+    new THREE.Vector3(18.83, 6.06, 35.42),
+    new THREE.Vector3(18.81, 6.06, 50.43),
+    new THREE.Vector3(12.93, 10.06, 50.42),
+    new THREE.Vector3(12.93, 14.06, 50.42),
+    new THREE.Vector3(12.95, 4.06, 35.41),
+    new THREE.Vector3(12.95, 8.06, 35.41),
+    new THREE.Vector3(12.95, 6.06, 35.41),
+    new THREE.Vector3(12.95, 12.06, 35.41),
+    new THREE.Vector3(12.95, 10.06, 35.41),
+    new THREE.Vector3(12.93, 8.06, 50.42),
+    new THREE.Vector3(12.93, 6.06, 50.42),
+    new THREE.Vector3(12.93, 12.06, 50.42)
+  ])
+
+  const cercleSerjointValeur = useMemo(() => [
+    new THREE.Vector3(12.93, 10.08, 50.63),
+    new THREE.Vector3(12.93, 12.08, 50.63),
+    new THREE.Vector3(12.93, 4.08, 50.63),
+    new THREE.Vector3(12.93, 8.08, 50.63),
+    new THREE.Vector3(12.95, 14.08, 35.26),
+    new THREE.Vector3(12.95, 12.08, 35.26),
+    new THREE.Vector3(12.95, 10.08, 35.26),
+    new THREE.Vector3(12.93, 6.08, 50.63),
+    new THREE.Vector3(12.95, 4.08, 35.26),
+    new THREE.Vector3(12.93, 14.08, 50.63),
+    new THREE.Vector3(12.95, 6.08, 35.26),
+    new THREE.Vector3(18.84, 8.08, 35.27),
+    new THREE.Vector3(12.95, 8.08, 35.26),
+    new THREE.Vector3(18.84, 14.08, 35.27),
+    new THREE.Vector3(18.84, 10.08, 35.27),
+    new THREE.Vector3(18.82, 12.08, 50.63),
+    new THREE.Vector3(18.84, 12.08, 35.27),
+    new THREE.Vector3(18.82, 10.08, 50.63),
+    new THREE.Vector3(18.84, 6.08, 35.27),
+    new THREE.Vector3(18.82, 6.08, 50.63),
+    new THREE.Vector3(18.84, 4.08, 35.27),
+    new THREE.Vector3(18.82, 8.08, 50.63),
+    new THREE.Vector3(18.82, 14.08, 50.63),
+    new THREE.Vector3(18.82, 4.08, 50.63)
+  ])
+
+  const coudeRotValeur = useMemo(() => [
+    [-Math.PI / 2, 0, 1.57],
+    [Math.PI / 2, 0, -1.57],
+    [-Math.PI / 2, 0, 1.57],
+    [Math.PI / 2, 0, -1.57],
+    [-Math.PI / 2, 0, -1.57],
+    [-Math.PI / 2, 0, -1.57],
+    [Math.PI / 2, 0, 1.57],
+    [Math.PI / 2, 0, 1.57],
+    [-Math.PI / 2, 0, -Math.PI / 2],
+    [Math.PI / 2, 0, 1.57],
+    [-Math.PI / 2, 0, -1.57],
+    [-Math.PI / 2, 0, -1.57],
+    [Math.PI / 2, 0, 1.57],
+    [Math.PI / 2, 0, 1.57],
+    [-Math.PI / 2, 0, -1.57],
+    [-Math.PI / 2, 0, 1.57],
+    [Math.PI / 2, 0, -1.57],
+    [Math.PI / 2, 0, 1.57],
+    [-Math.PI / 2, 0, 1.57],
+    [Math.PI / 2, 0, -1.57]
+  ])
+  const coudePosValeur = useMemo(() => [
+    new THREE.Vector3(12.92, 11.72, 51.62),
+    new THREE.Vector3(12.92, 10.42, 51.62),
+    new THREE.Vector3(12.92, 7.72, 51.62),
+    new THREE.Vector3(12.92, 6.42, 51.62),
+    new THREE.Vector3(12.95, 9.72, 34.23),
+    new THREE.Vector3(12.95, 13.72, 34.23),
+    new THREE.Vector3(12.95, 8.42, 34.23),
+    new THREE.Vector3(12.95, 12.42, 34.23),
+    new THREE.Vector3(18.86, 13.72, 34.24),
+    new THREE.Vector3(18.86, 12.42, 34.24),
+    new THREE.Vector3(12.95, 5.72, 34.23),
+    new THREE.Vector3(18.86, 9.72, 34.24),
+    new THREE.Vector3(12.95, 4.42, 34.23),
+    new THREE.Vector3(18.86, 8.42, 34.24),
+    new THREE.Vector3(18.86, 5.72, 34.24),
+    new THREE.Vector3(18.84, 11.72, 51.63),
+    new THREE.Vector3(18.84, 10.42, 51.63),
+    new THREE.Vector3(18.86, 4.42, 34.24),
+    new THREE.Vector3(18.84, 7.72, 51.63),
+    new THREE.Vector3(18.84, 6.42, 51.63)
+  ])
 
   return (
     <group {...props} dispose={null}>
@@ -212,12 +311,6 @@ export default function Model(props) {
           Positions={longTubeValeur}
           object={nodes.LongTube}
           />
-      {/* <mesh
-        name="expuls"
-        geometry={nodes.expuls.geometry}
-        material={nodes.expuls.material}
-        position={[12.59, 10.68, 49.68]}
-      /> */}
       <ObjectInstance 
           name="expuls"
           Positions={expulsPosValeur}
@@ -225,11 +318,9 @@ export default function Model(props) {
           object={nodes.expuls}
           />
 
-      <group
-        name="Sortie"
+      <group name="Sortie"
         position={[-18.43, 4.54, -9.67]}
-        rotation={[0, -0.4, -Math.PI / 2]}
-      >
+        rotation={[0, -0.4, -Math.PI / 2]}>
         <ObjectInstance 
           name="Sortie_1"
           Positions={sortieValeur}
@@ -240,17 +331,30 @@ export default function Model(props) {
           Positions={sortieValeur}
           object={nodes.Sortie_2}
           />
-        {/* <mesh
-          name="Sortie_1"
-          geometry={nodes.Sortie_1.geometry}
-          material={materials["Material.446"]}
-        />
-        <mesh
-          name="Sortie_2"
-          geometry={nodes.Sortie_2.geometry}
-          material={materials["Material.445"]}
-        /> */}
       </group>
+      <group name="serjointGroup">
+        <ObjectInstance 
+          name="serjoint"
+          Positions={cerjointValeur}
+          object={nodes.serjoint_Base}
+          />
+        </group>
+        <group name="cercle_serjointGroup">
+        <ObjectInstance 
+          name="cercle_serjoint"
+          Positions={cercleSerjointValeur}
+          object={nodes.cercle_serjoint}
+          />
+        </group>
+
+        <group name="coudeGroup">
+        <ObjectInstance 
+          name="cercle_serjoint"
+          Positions={coudePosValeur}
+          Rotations={coudeRotValeur}
+          object={nodes.coude}
+          />
+        </group>
 
       <group name="Walls" position={[95.91, 38.27, -42.08]}>
         <mesh
