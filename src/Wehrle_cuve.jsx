@@ -191,6 +191,36 @@ export default function Model(props) {
     new THREE.Vector3(18.84, 6.42, 51.63)
   ])
 
+  const Tube_extPosValeur = useMemo(() => [
+    new THREE.Vector3(11.36, 9.1, 46.6),
+    new THREE.Vector3(11.36, 5.1, 46.6),
+    new THREE.Vector3(11.36, 11.1, 46.6),
+    new THREE.Vector3(11.36, 13.1, 46.6),
+    new THREE.Vector3(11.36, 15.1, 46.6),
+    new THREE.Vector3(11.36, 7.1, 46.6),
+    new THREE.Vector3(20.4, 5.1, 46.61),
+    new THREE.Vector3(20.4, 15.09, 46.61),
+    new THREE.Vector3(20.4, 7.1, 46.61),
+    new THREE.Vector3(20.4, 11.1, 46.61),
+    new THREE.Vector3(20.4, 9.1, 46.61),
+    new THREE.Vector3(20.4, 13.1, 46.61)
+  ])
+
+  const Tube_extRotValeur = useMemo(() => [
+    [-Math.PI / 2, 0, -0.79],
+    [-Math.PI / 2, 0, -0.79],
+    [-Math.PI / 2, 0, -0.79],
+    [-Math.PI / 2, 0, -0.79],
+    [-Math.PI / 2, 0, -0.79],
+    [-Math.PI / 2, 0, -0.79],
+    [-Math.PI / 2, 0, -2.36],
+    [-Math.PI / 2, 0, -2.36],
+    [-Math.PI / 2, 0, -2.36],
+    [-Math.PI / 2, 0, -2.36],
+    [-Math.PI / 2, 0, -2.36],
+    [-Math.PI / 2, 0, -2.36]
+  ])
+
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -353,6 +383,15 @@ export default function Model(props) {
           Positions={coudePosValeur}
           Rotations={coudeRotValeur}
           object={nodes.coude}
+          />
+        </group>
+
+        <group name="Tube_extGroup">
+        <ObjectInstance 
+          name="Tube_ext"
+          Positions={Tube_extPosValeur}
+          Rotations={Tube_extRotValeur}
+          object={nodes.Tube_ext}
           />
         </group>
 
