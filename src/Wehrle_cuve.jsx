@@ -221,13 +221,11 @@ export default function Model(props) {
     [-Math.PI / 2, 0, -2.36]
   ])
 
-  //Error on this one
   const basicTubePos = useMemo(() => [
     new THREE.Vector3(19.68, 11.1, 47.73),
     new THREE.Vector3(12.09, 11.11, 47.72),
     new THREE.Vector3(12.09, 9.11, 47.72),
     new THREE.Vector3(12.09, 7.11, 47.72),
-
     new THREE.Vector3(12.09, 5.11, 47.72),
     new THREE.Vector3(19.68, 9.1, 47.73),
     new THREE.Vector3(19.68, 5.1, 47.73),
@@ -239,7 +237,6 @@ export default function Model(props) {
     [0, 0.78, 0],
     [0, 0.78, 0],
     [0, 0.78, 0],
-
     [0, 0.78, 0],
     [0, -0.79, Math.PI],
     [0, -0.79, Math.PI],
@@ -266,6 +263,56 @@ export default function Model(props) {
     [0.71, -0.36, -1.96],
     [0.71, -0.36, -1.96],
     [0, -0.79, -Math.PI]
+  ])
+
+  const basicTube001Pos = useMemo(() => [
+    new THREE.Vector3(12.09, 11.11, 47.72),
+    new THREE.Vector3(12.09, 13.1, 47.72),
+    new THREE.Vector3(12.09, 15.1, 47.72),
+    new THREE.Vector3(19, 13.1, 47.61),
+    new THREE.Vector3(19, 15.1, 47.61),
+    new THREE.Vector3(19.68, 11.1, 47.73),
+    new THREE.Vector3(12.09, 11.11, 47.72),
+    new THREE.Vector3(12.09, 9.11, 47.72),
+    new THREE.Vector3(12.09, 7.11, 47.72),
+    new THREE.Vector3(12.09, 5.11, 47.72),
+    new THREE.Vector3(19.68, 9.1, 47.73),
+    new THREE.Vector3(19.68, 5.1, 47.73),
+    new THREE.Vector3(19.68, 7.1, 47.73),
+
+    new THREE.Vector3(13.87, 6.48, 35.89),
+    new THREE.Vector3(13.87, 4.48, 35.89),
+    new THREE.Vector3(13.87, 8.48, 35.89),
+    new THREE.Vector3(13.87, 2.48, 35.89),
+    new THREE.Vector3(17.92, 4.48, 36.47),
+    new THREE.Vector3(17.92, 6.48, 36.47),
+    new THREE.Vector3(17.92, 2.48, 36.47),
+    new THREE.Vector3(17.92, 8.48, 36.47),
+
+  ])
+  const basicTube001Rot = useMemo(() => [
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+    [0, -0.79, 0],
+    [0, -0.79, 0],
+    [0, -0.79, Math.PI],
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+    [0, -0.79, Math.PI],
+    [0, -0.79, Math.PI],
+    [0, -0.79, Math.PI],
+
+    [Math.PI / 2, Math.PI / 6, Math.PI / 2],
+    [Math.PI / 2, Math.PI / 6, Math.PI / 2],
+    [Math.PI / 2, Math.PI / 6, Math.PI / 2],
+    [Math.PI / 2, Math.PI / 6, Math.PI / 2],
+    [Math.PI / 2, -Math.PI / 6, -Math.PI / 2],
+    [Math.PI / 2, -Math.PI / 6, -Math.PI / 2],
+    [Math.PI / 2, -Math.PI / 6, -Math.PI / 2],
+    [Math.PI / 2, -Math.PI / 6, -Math.PI / 2]
   ])
 
 //**** */
@@ -596,6 +643,15 @@ const basicTubeSerjointRot = useMemo(() => [
           Positions={basicTubeExtPos}
           Rotations={basicTubeExtRot}
           object={nodes.BasicTubeExt}
+          />
+      </group>
+
+      <group name='BasicTube001'>
+      <ObjectInstance 
+          name="BasicTube_001"
+          Positions={basicTube001Pos}
+          Rotations={basicTube001Rot}
+          object={nodes.BasicTube_001}
           />
       </group>
 
