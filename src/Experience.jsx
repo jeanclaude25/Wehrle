@@ -20,7 +20,7 @@ export default function Experience()
 
         <Perf position="top-left" />
 
-        <color args={ [ '#3a322c' ] } attach="background" />
+        <color args={ [ '#fff' ] } attach="background" />
 
         <OrbitControls ref={orbitRef} makeDefault regress/>
 

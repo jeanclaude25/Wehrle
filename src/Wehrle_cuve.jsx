@@ -221,6 +221,93 @@ export default function Model(props) {
     [-Math.PI / 2, 0, -2.36]
   ])
 
+  //Error on this one
+  const basicTubePos = useMemo(() => [
+    new THREE.Vector3(19.68, 11.1, 47.73),
+    new THREE.Vector3(12.09, 11.11, 47.72),
+    new THREE.Vector3(12.09, 9.11, 47.72),
+    new THREE.Vector3(12.09, 7.11, 47.72),
+
+    new THREE.Vector3(12.09, 5.11, 47.72),
+    new THREE.Vector3(19.68, 9.1, 47.73),
+    new THREE.Vector3(19.68, 5.1, 47.73),
+    new THREE.Vector3(19.68, 7.1, 47.73)
+  ])
+
+  const basicTubeRot = useMemo(() => [
+    [0, -0.79, Math.PI],
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+    [0, 0.78, 0],
+
+    [0, 0.78, 0],
+    [0, -0.79, Math.PI],
+    [0, -0.79, Math.PI],
+    [0, -0.79, Math.PI]
+  ])
+
+  const basicTubeExtPos = useMemo(() => [
+    new THREE.Vector3(19.34, 8.98, 49.61),
+    new THREE.Vector3(19.34, 4.98, 49.61),
+    new THREE.Vector3(19.34, 6.98, 49.61),
+    new THREE.Vector3(12.43, 10.98, 49.6),
+    new THREE.Vector3(12.43, 8.98, 49.6),
+    new THREE.Vector3(12.43, 6.98, 49.6),
+    new THREE.Vector3(12.43, 4.98, 49.6),
+    new THREE.Vector3(19.34, 10.98, 49.61)
+  ])
+
+  const basicTubeExtRot = useMemo(() => [
+    [0, -0.79, -Math.PI],
+    [0, -0.79, -Math.PI],
+    [0, -0.79, -Math.PI],
+    [0.71, -0.36, -1.96],
+    [0.71, -0.36, -1.96],
+    [0.71, -0.36, -1.96],
+    [0.71, -0.36, -1.96],
+    [0, -0.79, -Math.PI]
+  ])
+
+//**** */
+const basicTubeSerjointPos = useMemo(() => [
+  new THREE.Vector3(13.37, 9.36, 36.19),
+  new THREE.Vector3(12.52, 10.79, 49.69),
+  new THREE.Vector3(19.24, 10.79, 49.69),
+  new THREE.Vector3(18.43, 9.36, 36.19),
+  new THREE.Vector3(13.37, 5.36, 36.19),
+  new THREE.Vector3(13.37, 7.36, 36.19),
+  new THREE.Vector3(13.37, 3.36, 36.19),
+  new THREE.Vector3(12.52, 4.79, 49.69),
+  new THREE.Vector3(19.24, 6.79, 49.69),
+  new THREE.Vector3(12.52, 6.79, 49.69),
+  new THREE.Vector3(12.52, 8.79, 49.69),
+  new THREE.Vector3(19.24, 8.79, 49.69),
+  new THREE.Vector3(18.43, 3.36, 36.19),
+  new THREE.Vector3(18.43, 5.36, 36.19),
+  new THREE.Vector3(19.24, 4.79, 49.69),
+  new THREE.Vector3(18.43, 7.36, 36.19)
+])
+
+const basicTubeSerjointRot = useMemo(() => [
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14],
+  [1.57, -Math.PI / 6, -3.14]
+])
+
+
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -236,12 +323,6 @@ export default function Model(props) {
         material={materials["Material.267"]}
         position={[-8.62, 1.7, 30.97]}
         rotation={[-Math.PI / 2, 0, 0]}
-      />
-      <mesh
-        name="Fundament_1_remesh001"
-        geometry={nodes.Fundament_1_remesh001.geometry}
-        material={materials.floor}
-        position={[-2.39, 0.43, 19.58]}
       />
       <mesh
         name="CuveSockel"
@@ -458,12 +539,6 @@ export default function Model(props) {
         rotation={[-Math.PI / 2, 0, 0]}
       />
       <mesh
-        name="Floor"
-        geometry={nodes.Floor.geometry}
-        material={nodes.Floor.material}
-        position={[-3.63, 0, 193.55]}
-      />
-      <mesh
         name="Würfel"
         geometry={nodes.Würfel.geometry}
         material={materials["Material.840"]}
@@ -508,6 +583,30 @@ export default function Model(props) {
           object={nodes.Toit_2}
           />
         </group>
+
+      <group name='BasicTubeGroup'>
+      <ObjectInstance 
+          name="BasicTube"
+          Positions={basicTubePos}
+          Rotations={basicTubeRot}
+          object={nodes.BasicTube}
+          />
+      <ObjectInstance 
+          name="BasicTubeExt"
+          Positions={basicTubeExtPos}
+          Rotations={basicTubeExtRot}
+          object={nodes.BasicTubeExt}
+          />
+      </group>
+
+      <group name='BasicTubeSerjointGroup'>
+      <ObjectInstance 
+          name="BasicTubeSerjoint"
+          Positions={basicTubeSerjointPos}
+          Rotations={basicTubeSerjointRot}
+          object={nodes.BasicTubeSerjoint}
+          />
+      </group>
       
     </group>
   );
