@@ -1,3 +1,8 @@
+@font-face {
+    font-family: gibson;
+    src: url(../public/fonts/Font_Gibson/GibsonRegular.OTF);
+  }
+
 html,
 body,
 #root
@@ -10,3 +15,34 @@ body,
     background: white;
     touch-action: none;
 }
+
+.html3dText{
+    text-align: center;
+    font-family: gibson;
+    color: #808080;
+    text-decoration: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.html3dText img{
+    width: 50px;
+    user-drag: none;  
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   transition: all 0.1s;
+}
+
+.html3dText img:hover{
+    width: 55px;
+}
+
+.html3dText img:active{
+    transition: none;
+    width: 40px;
+}
+

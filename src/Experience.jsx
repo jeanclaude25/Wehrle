@@ -1,10 +1,12 @@
-import { OrbitControls, Stage } from '@react-three/drei'
+import { OrbitControls, Stage} from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 import { Perf } from 'r3f-perf'
 import { Suspense, useRef } from 'react'
 // import Placeholder from './Placeholder.js'
 import Effects from './Effects.jsx'
 import Watch from './Watch.js'
 import Model from './Wehrle_cuve.jsx'
+import Wehrle_text from './Wehrle_text.jsx'
 // import { useFrame } from '@react-three/fiber'
 
 export default function Experience()
@@ -12,8 +14,8 @@ export default function Experience()
     const orbitRef = useRef();
 
     // useFrame((state) => {
-    //     console.log(state.camera)
-    //     console.log(orbitRef.current)
+    //     console.log(state.camera.position)
+    //     // console.log(orbitRef.current.position0)
     // })
 
     return <>
@@ -32,13 +34,14 @@ export default function Experience()
         
             <Stage 
                     adjustCamera = {false}
-                    intensity = {0.2}
+                    intensity = {0.4}
                     shadows = {false}
                     preset = 'portrait'
                     environment="forest">
 
             <Model/>
-            {/* <Watch/> */}
+            <Wehrle_text/>
+            
             </Stage>
             
             {/* <CubeSphere/> */}

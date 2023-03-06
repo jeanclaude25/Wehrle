@@ -617,6 +617,11 @@ const basicTubeSerjointRot = useMemo(() => [
         material={materials["Material.402"]}
         position={[-8.41, 7.02, 25.73]}
       />
+      <mesh
+      name='M1_retopo'
+      geometry={nodes.M1_retopo.geometry}
+      material={nodes.M1_retopo.material}
+      />
 
       <group name="Toit" position={[43.34, 76.95, 0.89]}>
           <ObjectInstance 
