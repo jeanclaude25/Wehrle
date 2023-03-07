@@ -14,14 +14,15 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF("./reception.glb");
   const openRef = useRef();
 
-  const controls = useControls({
-    opacity: {value:1, min:0, max:1, step:0.01}
-  })
-  
   useEffect(()=>{
     openRef.current.material.transparent = true
   },[])
 
+  //DEBUG
+  const controls = useControls({
+    opacity: {value:1, min:0, max:1, step:0.01}
+  })
+  
   useEffect(()=>{
   openRef.current.material.opacity = controls.opacity
   },[controls.opacity])

@@ -1,16 +1,25 @@
 import { Html, Text } from '@react-three/drei';
 
-export default function Wehrle_text (){
+export default function Wehrle_text (props){
     const distanceFactor = 220;
+
+
+    const click = (e) => {
+        // console.log(e)
+        props.props(e)
+     }
 
     return(
         <>
         <Html
+        
         position={[18.19, 23.21, 89.65]}
         wrapperClass="html3dText"
         distanceFactor={distanceFactor}
         center>
-            <img alt='plus' src='./img/Button_grau.png'/>
+            <img
+            onClick={() => click("benefitsWehrle")}
+            alt='plus' src='./img/Button_grau.png'/>
             All benefits at a glance
         </Html>
 
@@ -19,7 +28,9 @@ export default function Wehrle_text (){
         wrapperClass="html3dText"
         distanceFactor={distanceFactor}
         center>
-            <img alt='plus' src='./img/Button_grau.png'/>
+            <img
+            onClick={() => click("exploreWehrle")}
+            alt='plus' src='./img/Button_grau.png'/>
             Explore WEHRLE's adaptive process
         </Html>
 
@@ -28,7 +39,9 @@ export default function Wehrle_text (){
         wrapperClass="html3dText"
         distanceFactor={distanceFactor}
         center>
-            <img alt='plus' src='./img/Button_grau.png'/>
+            <img
+            onClick={() => click("intelligentWehrle")}
+            alt='plus' src='./img/Button_grau.png'/>
             Intelligent modular plant design
         </Html>
 
@@ -37,7 +50,9 @@ export default function Wehrle_text (){
         wrapperClass="html3dText"
         distanceFactor={distanceFactor}
         center>
-            <img alt='plus' src='./img/Button_grau.png'/>
+            <img
+            onClick={() => click("easyWehrle")}
+            alt='plus' src='./img/Button_grau.png'/>
             Easy to upgrade to water re-use
         </Html>
 
@@ -46,7 +61,9 @@ export default function Wehrle_text (){
         wrapperClass="html3dText"
         distanceFactor={distanceFactor}
         center>
-            <img alt='plus' src='./img/Button_grau.png'/>
+            <img
+            onClick={() => click("friendlyWehrle")}
+            alt='plus' src='./img/Button_grau.png'/>
             Friendly remote handling
         </Html>
 
