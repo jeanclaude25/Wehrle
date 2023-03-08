@@ -26,7 +26,13 @@ body,
     user-select: none; /* Standard syntax */
 }
 
-.html3dText img{
+.return_button{
+    position: absolute;
+    z-index: 1500;
+    bottom: 0;
+}
+
+.html3dText img, .return_button{
     width: 50px;
     user-drag: none;  
    user-select: none;
@@ -37,12 +43,11 @@ body,
    transition: all 0.1s;
 }
 
-.html3dText img:hover{
+.html3dText img:hover, .return_button:hover{
     width: 55px;
 }
 
-.html3dText img:active{
+.html3dText img:active, .return_button:active{
     transition: none;
     width: 49px;
 }
-

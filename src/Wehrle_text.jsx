@@ -11,6 +11,8 @@ export default function Wehrle_text (props){
 
     return(
         <>
+        
+
         <Html
         
         position={[18.19, 23.21, 89.65]}

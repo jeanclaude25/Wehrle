@@ -39,9 +39,9 @@ export default function Experience()
         orbitRef.current.target.z = controls.targetZ
       },[controls.targetZ])
 
-    useFrame((state) => {
-        console.log(state.camera.position)
-    })
+    // useFrame((state) => {
+    //     console.log(state.camera.position)
+    // })
 
     const resetAllView = () => {
         setExploreWehrle(false)

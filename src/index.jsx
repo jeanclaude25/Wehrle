@@ -7,6 +7,7 @@ import { isMobile } from './store'
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
 root.render(
+    <>
     <Canvas
         shadows
         gl={{
@@ -26,4 +27,9 @@ root.render(
     >
         <Experience />
     </Canvas>
+    <img
+    className='return_button'
+    onClick={() => click("benefitsWehrle")}
+    alt='plus' src='./img/Button_grau_minus.png'/>
+    </>
 )
