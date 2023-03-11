@@ -5,10 +5,10 @@ import { Perf } from 'r3f-perf'
 import { Suspense, useEffect, useRef, useState } from 'react'
 // import Placeholder from './Placeholder.js'
 import Effects from './Effects.jsx'
-import Watch from './Watch.js'
 import Model from './Wehrle_cuve.jsx'
 import Wehrle_text from './Wehrle_text.jsx'
 import { useControls } from "leva";
+import WaterOb from './shaderMaterials/WaterOb.js'
 
 
 export default function Experience()
@@ -114,8 +114,8 @@ export default function Experience()
             <Wehrle_text props={goToThis}/>
             
             </Stage>
-            
-            {/* <CubeSphere/> */}
+
+            <WaterOb base={0}/>
         </Suspense>
         
 
