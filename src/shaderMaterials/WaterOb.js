@@ -11,8 +11,8 @@ import { AdditiveBlending } from 'three';
 
 export default function WaterOb({base})
 {
-    const thickness = 5
-    const resolution = 256
+    const thickness = 1.0
+    const resolution = 128
     const material = useRef()
 
     useFrame((state) => {
@@ -22,25 +22,29 @@ export default function WaterOb({base})
     })
 
     return (
-        <group position={[-236, 8.1,-0.9]} scale={2.}>
+        <group position={[-236, 8.1,-0.9]} scale={9.2}>
         <mesh castShadow receiveShadow rotation={[-Math.PI / 2, 0, Math.PI/2]}>
 
-        <boxGeometry args={[20, 20, thickness, resolution, resolution, 1]} />
+        <boxGeometry args={[5, 5, thickness, resolution, resolution, 10]} />
 
         <CustomShaderMaterial
           ref={material}
-          baseMaterial={THREE.MeshStandardMaterial}
+          baseMaterial={THREE.MeshPhysicalMaterial}
           vertexShader={patchShaders(vertexShader)}
           fragmentShader={fragmentShader}
-          // side={THREE.DoubleSide}
+          side={THREE.DoubleSide}
           color={'blue'}
-          roughness={0.5}
-          metalness={0.2}
+          transmission={1.1}
+          ior={1.4}
+          // wireframe={true}
+          roughness={0.8}
+          metalness={0.1}
           flatShading={false}
           transparent={true}
           // blending={AdditiveBlending}
           uniforms={{
             uTime: { value: 0 },
+            uTimeScale: {value: 0.2},
             waterColor: {
               value: new THREE.Color('#52a7f7').convertLinearToSRGB(),
             },

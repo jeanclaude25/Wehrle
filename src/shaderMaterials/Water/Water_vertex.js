@@ -1,6 +1,7 @@
 export default /* glsl */`
 
 uniform float uTime;
+uniform float uTimeScale;
 uniform float uHeight;
 varying float vHeight;
 varying vec2 vUv;
@@ -9,7 +10,7 @@ vec3 displace(vec3 point) {
 
   vec3 p = point;
 
-  p.y += uTime * 2.0;
+  p.y += uTime * 2. * uTimeScale;
 
   gln_tFBMOpts fbmOpts = gln_tFBMOpts(1.0, 0.4, 2.3, 0.4, 1.0, 5, false, false);
 
@@ -20,12 +21,12 @@ vec3 displace(vec3 point) {
 
   vec3 n = vec3(0.0);
 
-  if(p.z >= uHeight / 2.0) {
-      n.z += gln_normalize(gln_pfbm(p.xy + (uTime * 0.5), fbmOpts));
-      n += gln_GerstnerWave(p, A, uTime).xzy;
-      n += gln_GerstnerWave(p, B, uTime).xzy * 0.5;
-      n += gln_GerstnerWave(p, C, uTime).xzy * 0.25;
-      n += gln_GerstnerWave(p, D, uTime).xzy * 0.2;
+  if(p.z >= uHeight * 0.5) {
+      n.z += gln_normalize(gln_pfbm(p.xy + (uTime * 0.5 * uTimeScale), fbmOpts));
+      n += gln_GerstnerWave(p, A, uTime).xzy * uTimeScale;
+      n += gln_GerstnerWave(p, B, uTime).xzy * 0.5 * uTimeScale;
+      n += gln_GerstnerWave(p, C, uTime).xzy * 0.25 * uTimeScale;
+      n += gln_GerstnerWave(p, D, uTime).xzy * 0.2 * uTimeScale;
   }
 
   vHeight = n.z;
@@ -56,13 +57,12 @@ vec3 recalcNormals(vec3 newPos) {
 
 
 void main() {
-  vec3 v = normalize(position) * 10.0 ;
+  vec3 v = normalize(position)*2.2;
   csm_Position = displace(vec3(v.x, v.y, position.z));
   csm_Normal = recalcNormals(csm_Position);
 
   // csm_Position = displace(position);
-  // vec3 v = normalize(csm_Position) * 22.0 ;
-  // csm_Normal = recalcNormals(v);
+  // csm_Normal = recalcNormals(csm_Position);
 
   vUv = uv;
 }
