@@ -8,7 +8,6 @@ export default function ObjectInstance ({ Positions = [], object, Scales = [], R
     const Rota = Rotations
     const {position, rotation} = props
     
-    
     /* const geometry = new THREE.BufferGeometry().setFromPoints( points ); */
     return (
       <Instances range={array.length} material={Ob.material} geometry={Ob.geometry}>
