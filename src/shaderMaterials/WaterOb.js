@@ -22,7 +22,7 @@ export default function WaterOb({base})
     })
 
     return (
-        <group position={[-236, 8.1,-0.9]} scale={9.2}>
+        <group position={[-235, 8.1,-0.85]} scale={9.2}>
         <mesh castShadow receiveShadow rotation={[-Math.PI / 2, 0, Math.PI/2]}>
 
         <boxGeometry args={[5, 5, thickness, resolution, resolution, 10]} />
