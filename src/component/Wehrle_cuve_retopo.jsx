@@ -29,28 +29,28 @@ export default function Model(props) {
         rotation={[Math.PI / 2, 0, 0]}
       >
         <mesh
-          name="NEMO_Pumpe_NM053BY_1_1_1_body1_1_001"
-          geometry={nodes.NEMO_Pumpe_NM053BY_1_1_1_body1_1_001.geometry}
-          material={materials.lambert1}
-          position={[-19.35, -51.75, -3.23]}
-        />
-        <mesh
           name="NEMO_Pumpe_NM053BY_1_1_1_body1_4_001"
           geometry={nodes.NEMO_Pumpe_NM053BY_1_1_1_body1_4_001.geometry}
           material={materials.lambert1}
           position={[-19.45, -52.9, -3.15]}
         />
         <mesh
-          name="NEMO_Pumpe_NM053BY_1_1_1_body1_3_001"
-          geometry={nodes.NEMO_Pumpe_NM053BY_1_1_1_body1_3_001.geometry}
-          material={materials.lambert1}
-          position={[-19.35, -52.5, -3.22]}
-        />
-        <mesh
           name="NEMO_Pumpe_NM053BY_1_1_1_body1_2_001"
           geometry={nodes.NEMO_Pumpe_NM053BY_1_1_1_body1_2_001.geometry}
           material={materials.lambert1}
           position={[-19.35, -51.84, -3.23]}
+        />
+        <mesh
+          name="NEMO_Pumpe_NM053BY_1_1_1_body1_1_001"
+          geometry={nodes.NEMO_Pumpe_NM053BY_1_1_1_body1_1_001.geometry}
+          material={materials.lambert1}
+          position={[-19.35, -51.75, -3.23]}
+        />
+        <mesh
+          name="NEMO_Pumpe_NM053BY_1_1_1_body1_3_001"
+          geometry={nodes.NEMO_Pumpe_NM053BY_1_1_1_body1_3_001.geometry}
+          material={materials.lambert1}
+          position={[-19.35, -52.5, -3.22]}
         />
         <mesh
           name="Fundament_1_1_1001"
@@ -67,12 +67,6 @@ export default function Model(props) {
           position={[-11.72, 11.49, -3.96]}
         />
         <mesh
-          name="R10523_Drehkolbengeblä_1002"
-          geometry={nodes.R10523_Drehkolbengeblä_1002.geometry}
-          material={materials.lambert1}
-          position={[-13.78, 3.17, -7.03]}
-        />
-        <mesh
           name="R09871_Kreiselpumpe_NB_65_125_133_A_F2_K_V_BQQV_U1S1P01_1_1001"
           geometry={
             nodes.R09871_Kreiselpumpe_NB_65_125_133_A_F2_K_V_BQQV_U1S1P01_1_1001
@@ -80,6 +74,12 @@ export default function Model(props) {
           }
           material={materials.lambert1}
           position={[-11.9, 15.34, -3.44]}
+        />
+        <mesh
+          name="R10523_Drehkolbengeblä_1002"
+          geometry={nodes.R10523_Drehkolbengeblä_1002.geometry}
+          material={materials.lambert1}
+          position={[-13.78, 3.17, -7.03]}
         />
         <mesh
           name="polySurface33"
@@ -90,20 +90,8 @@ export default function Model(props) {
         <mesh
           name="polySurface40"
           geometry={nodes.polySurface40.geometry}
-          material={materials.lambert1}
+          material={materials.barre}
           position={[6.37, 51.7, -5.12]}
-        />
-        <mesh
-          name="polySurface43"
-          geometry={nodes.polySurface43.geometry}
-          material={materials.lambert1}
-          position={[6.36, 51.7, -8.47]}
-        />
-        <mesh
-          name="polySurface42"
-          geometry={nodes.polySurface42.geometry}
-          material={materials.lambert1}
-          position={[6.36, 51.7, -5.63]}
         />
         <mesh
           name="polySurface35"
@@ -118,57 +106,10 @@ export default function Model(props) {
           position={[6.36, 51.7, -4.73]}
         />
         <mesh
-          name="polySurface45"
-          geometry={nodes.polySurface45.geometry}
-          material={materials.lambert1}
-          position={[7.41, 37.24, -11.65]}
-        />
-        <mesh
           name="polySurface30"
           geometry={nodes.polySurface30.geometry}
           material={materials.lambert1}
           position={[6.36, 52.37, -3.72]}
-        />
-        <mesh
-          name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_9001"
-          geometry={
-            nodes["R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_9001"].geometry
-          }
-          material={materials.lambert1}
-          position={[14.88, 41.56, -11.95]}
-        />
-        <mesh
-          name="R07680_Rohr_d139_7x1_6_PN10_16_1_4404_1_1_2_1_1_1_1_1001"
-          geometry={
-            nodes.R07680_Rohr_d139_7x1_6_PN10_16_1_4404_1_1_2_1_1_1_1_1001
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[7.9, 36.99, -12.51]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_1_1_1_2_1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_1_1_1_2_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[6.35, 53.44, -3.72]}
-        />
-        <mesh
-          name="R07810_Bogen_90°_139_7x2_1_4404_1_1_1_1_1001"
-          geometry={
-            nodes["R07810_Bogen_90°_139_7x2_1_4404_1_1_1_1_1001"].geometry
-          }
-          material={materials.lambert1}
-          position={[6.14, 37.22, -11.65]}
-        />
-        <mesh
-          name="R09344_Bogen_60°_140x8_3_SDR17_PE100_1_1_2001"
-          geometry={
-            nodes["R09344_Bogen_60°_140x8_3_SDR17_PE100_1_1_2001"].geometry
-          }
-          material={materials.lambert1}
-          position={[8.94, 36.99, -13.78]}
         />
         <mesh
           name="polySurface38"
@@ -177,242 +118,20 @@ export default function Model(props) {
           position={[6.37, 51.7, -4.74]}
         />
         <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_2_1_1_1_1_1_1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_2_1_1_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[14.89, 39.28, -11.65]}
-        />
-        <mesh
-          name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_10001"
-          geometry={
-            nodes["R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_10001"].geometry
-          }
-          material={materials.lambert1}
-          position={[14.58, 41.87, -14.76]}
-        />
-        <mesh
           name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_11001"
           geometry={
             nodes["R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_11001"].geometry
           }
-          material={materials.lambert1}
+          material={materials.barre}
           position={[6.36, 54.26, -3.96]}
         />
         <mesh
-          name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_12001"
+          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_1_1_1_2_1001"
           geometry={
-            nodes["R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_12001"].geometry
+            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_1_1_1_2_1001.geometry
           }
-          material={materials.lambert1}
-          position={[6.22, 51.44, -11.41]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_1_1_1_1_1_1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_1_1_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[10.33, 36.99, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_2_1_1_1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_2_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[14.88, 41.86, -13.36]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_3_1_1_1__1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_3_1_1_1__1001.geometry
-          }
-          material={materials.lambert1}
-          position={[12.28, 41.86, -15.07]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_1_1_3_1_1_1__1_1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_1_1_3_1_1_1__1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[9.86, 41.85, -15.06]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_2__1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_2__1001.geometry
-          }
-          material={materials.lambert1}
-          position={[5.91, 43.72, -11.64]}
-        />
-        <mesh
-          name="R07680_Rohr_d139_7x1_6_PN10_16_1_4404_1_1_2_1_1_2_1_1_1_1_1"
-          geometry={
-            nodes.R07680_Rohr_d139_7x1_6_PN10_16_1_4404_1_1_2_1_1_2_1_1_1_1_1
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[14.03, 37, -11.65]}
-        />
-        <mesh
-          name="R07810_Bogen_90°_139_7x2_1_4404_1_1_1_1_2001"
-          geometry={
-            nodes["R07810_Bogen_90°_139_7x2_1_4404_1_1_1_1_2001"].geometry
-          }
-          material={materials.lambert1}
-          position={[14.65, 37.25, -11.65]}
-        />
-        <mesh
-          name="R09308_Bogen_30°_140x8_3_SDR17_PE100_gekürzt_1_1001"
-          geometry={
-            nodes["R09308_Bogen_30°_140x8_3_SDR17_PE100_gekürzt_1_1001"]
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[5.94, 50.86, -11.65]}
-        />
-        <mesh
-          name="R09344_Bogen_60°_140x8_3_SDR17_PE100_1_1_1001"
-          geometry={
-            nodes["R09344_Bogen_60°_140x8_3_SDR17_PE100_1_1_1001"].geometry
-          }
-          material={materials.lambert1}
-          position={[11.78, 37, -13.6]}
-        />
-        <mesh
-          name="R20278_Bogen_60°_139_7x2_1_4404_1_2001"
-          geometry={nodes["R20278_Bogen_60°_139_7x2_1_4404_1_2001"].geometry}
-          material={materials.lambert1}
-          position={[13.35, 37, -11.83]}
-        />
-        <mesh
-          name="R20278_Bogen_60°_139_7x2_1_4404_1_1001"
-          geometry={nodes["R20278_Bogen_60°_139_7x2_1_4404_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[7.33, 36.99, -11.82]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_rechts_5_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_rechts_5_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.89, -30.68]}
-        />
-        <mesh
-          name="Holm_48_3x3_6_links_1_1_1001"
-          geometry={nodes.Holm_48_3x3_6_links_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-10.08, -45.88, -21]}
-        />
-        <mesh
-          name="Knieleiste_26_9x2_6_1_4_2_3_1_1_1_1001"
-          geometry={nodes.Knieleiste_26_9x2_6_1_4_2_3_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.79, -42.6]}
-        />
-        <mesh
-          name="Knieleiste_26_9x2_6_5_1_1_1_1_1_1001"
-          geometry={nodes.Knieleiste_26_9x2_6_5_1_1_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-2.05, -47.4, -40.52]}
-        />
-        <mesh
-          name="Flach_50x5_1_1_1001"
-          geometry={nodes.Flach_50x5_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-10.91, -47.46, -26.52]}
-        />
-        <mesh
-          name="Flach_50x5_1_1_1_1001"
-          geometry={nodes.Flach_50x5_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-10.73, -48.78, -26.52]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_links_2_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_links_2_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.91, -45.31, -9.82]}
-        />
-        <mesh
-          name="Flach_50x5_2_1_1_1001"
-          geometry={nodes.Flach_50x5_2_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.67, -49.6, -26.52]}
-        />
-        <mesh
-          name="Flach_50x5_3_1_1_1001"
-          geometry={nodes.Flach_50x5_3_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-8.34, -49.42, -26.52]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_links_4_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_links_4_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.91, -45.31, -23.73]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_rechts_2_1_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_rechts_2_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.34, -45.99, -2.87]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_rechts_5_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_rechts_5_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.34, -45.99, -30.68]}
-        />
-        <mesh
-          name="Gelä_1006"
-          geometry={nodes.Gelä_1006.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -44.58, -42.3]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_links_2_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_links_2_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.81, -45.24, -9.82]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_links_2_1_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_links_2_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.81, -45.24, -2.87]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_1_1_2_1_2"
-          geometry={nodes.Stützbügel_Flach_50x5_4_1_1_2_1_2.geometry}
-          material={materials.lambert1}
-          position={[-9.35, -48.38, -11.28]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_links_4_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_links_4_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.81, -45.24, -23.73]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_rechts_2_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_rechts_2_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.89, -9.82]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_2_1_1_1_1001"
-          geometry={nodes.Stützbügel_Flach_50x5_4_2_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.29, -48.8, -39.91]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_rechts_3_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_rechts_3_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.89, -16.77]}
+          material={materials.barre}
+          position={[6.35, 53.44, -3.72]}
         />
         <mesh
           name="Handlauf_48_3x4_4_1_1_1001"
@@ -421,64 +140,10 @@ export default function Model(props) {
           position={[-2.05, -47.48, -44.74]}
         />
         <mesh
-          name="Handlauf_48_3x4_4_1_1_2"
-          geometry={nodes.Handlauf_48_3x4_4_1_1_2.geometry}
+          name="polySurface128"
+          geometry={nodes.polySurface128.geometry}
           material={materials.lambert1}
-          position={[-7.33, -47.79, -44.74]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_2_1_1_1_3"
-          geometry={nodes.Stützbügel_Flach_50x5_4_2_1_1_1_3.geometry}
-          material={materials.lambert1}
-          position={[-9.29, -48.8, -43.12]}
-        />
-        <mesh
-          name="Holm_48_3x3_6_links_1_1_2"
-          geometry={nodes.Holm_48_3x3_6_links_1_1_2.geometry}
-          material={materials.lambert1}
-          position={[-7.45, -46.59, -21]}
-        />
-        <mesh
-          name="Flach_50x5_4_1_1_1001"
-          geometry={nodes.Flach_50x5_4_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.52, -48.36, -23.19]}
-        />
-        <mesh
-          name="Gelä_1_4001"
-          geometry={nodes.Gelä_1_4001.geometry}
-          material={materials.lambert1}
-          position={[-2.05, -50.19, -41.65]}
-        />
-        <mesh
-          name="Gelä_1_6"
-          geometry={nodes.Gelä_1_6.geometry}
-          material={materials.lambert1}
-          position={[-2.05, -44.67, -41.65]}
-        />
-        <mesh
-          name="Gelä_1_7"
-          geometry={nodes.Gelä_1_7.geometry}
-          material={materials.lambert1}
-          position={[-7.33, -49.72, -41.65]}
-        />
-        <mesh
-          name="Knieleiste_26_9x2_6_1_4_2_3_1_1_1_1_1001"
-          geometry={nodes.Knieleiste_26_9x2_6_1_4_2_3_1_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.79, -40.52]}
-        />
-        <mesh
-          name="Knieleiste_26_9x2_6_5_1_1_1_1_1_2"
-          geometry={nodes.Knieleiste_26_9x2_6_5_1_1_1_1_1_2.geometry}
-          material={materials.lambert1}
-          position={[-2.05, -47.4, -42.6]}
-        />
-        <mesh
-          name="Gelä_1_8"
-          geometry={nodes.Gelä_1_8.geometry}
-          material={materials.lambert1}
-          position={[-7.33, -44.57, -41.65]}
+          position={[-4.7, -47.51, -38.99]}
         />
         <mesh
           name="Gelä_1_9"
@@ -487,136 +152,10 @@ export default function Model(props) {
           position={[-7.32, -50.49, -41.65]}
         />
         <mesh
-          name="Leiterclip_Fl_120x12_links_3_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_links_3_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.91, -45.31, -16.77]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_rechts_2_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_rechts_2_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.34, -45.99, -9.82]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_rechts_4_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_rechts_4_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.34, -45.99, -23.73]}
-        />
-        <mesh
-          name="polySurface128"
-          geometry={nodes.polySurface128.geometry}
-          material={materials.lambert1}
-          position={[-4.7, -47.51, -38.99]}
-        />
-        <mesh
-          name="group3_Sprosse_14_17_1_1_9"
-          geometry={nodes.group3_Sprosse_14_17_1_1_9.geometry}
-          material={materials.lambert1}
-          position={[-8.77, -46.23, -21.03]}
-        />
-        <mesh
-          name="Sprosse_14_17_1_1_2"
-          geometry={nodes.Sprosse_14_17_1_1_2.geometry}
-          material={materials.lambert1}
-          position={[-8.77, -46.23, -45.34]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_links_3_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_links_3_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.81, -45.24, -16.77]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_links_5_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_links_5_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.81, -45.24, -30.68]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_rechts_2_1_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_rechts_2_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.89, -2.87]}
-        />
-        <mesh
-          name="Halteclip_Fl_120x12_rechts_4_1_1_1001"
-          geometry={nodes.Halteclip_Fl_120x12_rechts_4_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.89, -23.73]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_1_1_1_1001"
-          geometry={nodes.Stützbügel_Flach_50x5_4_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.44, -48.78, -14.26]}
-        />
-        <mesh
-          name="Handlauf_48_3x4_4_1_1_1_1_1001"
-          geometry={nodes.Handlauf_48_3x4_4_1_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.35, -45.62, -44.74]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_links_2_1_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_links_2_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.91, -45.31, -2.87]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_links_5_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_links_5_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-9.91, -45.31, -30.68]}
-        />
-        <mesh
-          name="Leiterclip_Fl_120x12_rechts_3_1_1_1001"
-          geometry={nodes.Leiterclip_Fl_120x12_rechts_3_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-7.34, -45.99, -16.77]}
-        />
-        <mesh
-          name="polySurface126"
-          geometry={nodes.polySurface126.geometry}
-          material={materials.lambert1}
-          position={[-9.35, -48.38, -32.09]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_1_1_2_1_3"
-          geometry={nodes.Stützbügel_Flach_50x5_4_1_1_2_1_3.geometry}
-          material={materials.lambert1}
-          position={[-9.35, -48.38, -23.17]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_2_1_1_1_2"
-          geometry={nodes.Stützbügel_Flach_50x5_4_2_1_1_1_2.geometry}
-          material={materials.lambert1}
-          position={[-9.29, -48.8, -41.52]}
-        />
-        <mesh
-          name="Stützbügel_Flach_50x5_4_2_1_1_1_4"
-          geometry={nodes.Stützbügel_Flach_50x5_4_2_1_1_1_4.geometry}
-          material={materials.lambert1}
-          position={[-9.29, -48.8, -44.73]}
-        />
-        <mesh
           name="Fundament_2_1_remesh001"
           geometry={nodes.Fundament_2_1_remesh001.geometry}
           material={materials.lambert1}
           position={[-4.36, -23.42, -1.49]}
-        />
-        <mesh
-          name="polySurface134"
-          geometry={nodes.polySurface134.geometry}
-          material={materials.lambert1}
-          position={[-4.25, -23.57, -49]}
-        />
-        <mesh
-          name="polySurface129"
-          geometry={nodes.polySurface129.geometry}
-          material={materials.lambert1}
-          position={[-4.29, -23.45, -28.5]}
         />
         <mesh
           name="polySurface136"
@@ -637,27 +176,21 @@ export default function Model(props) {
           position={[-4.25, -42.45, -43.95]}
         />
         <mesh
+          name="Cuve_principale"
+          geometry={nodes.Cuve_principale.geometry}
+          material={materials.cuve}
+          position={[-4.29, -23.45, -28.5]}
+        />
+        <mesh
           name="Fundament_2_1_remesh002"
           geometry={nodes.Fundament_2_1_remesh002.geometry}
           material={materials.lambert1}
           position={[-4.36, -23.42, -1.49]}
         />
         <mesh
-          name="polySurface129001"
-          geometry={nodes.polySurface129001.geometry}
-          material={materials.lambert1}
-          position={[-4.29, -23.45, -28.5]}
-        />
-        <mesh
-          name="polySurface136001"
-          geometry={nodes.polySurface136001.geometry}
-          material={materials.lambert1}
-          position={[-23.49, -31.98, -4.56]}
-        />
-        <mesh
           name="polySurface134001"
           geometry={nodes.polySurface134001.geometry}
-          material={materials.lambert1}
+          material={materials.barre}
           position={[-4.25, -23.57, -49]}
         />
         <mesh
@@ -671,12 +204,6 @@ export default function Model(props) {
           geometry={nodes.polySurface135001.geometry}
           material={materials.lambert1}
           position={[-4.18, -47.18, -41.22]}
-        />
-        <mesh
-          name="polySurface149"
-          geometry={nodes.polySurface149.geometry}
-          material={materials.lambert1}
-          position={[-6.99, -4.91, -46.23]}
         />
         <mesh
           name="R07587_Rohr_d168_3x2_PN10_16_1_4404_1_1_1001"
@@ -695,92 +222,8 @@ export default function Model(props) {
           geometry={
             nodes.R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_1_1_1001.geometry
           }
-          material={materials.lambert1}
+          material={materials.barre}
           position={[-8.1, 2.51, -24.17]}
-        />
-        <mesh
-          name="R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_1_1_2"
-          geometry={
-            nodes.R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_1_1_2.geometry
-          }
-          material={materials.lambert1}
-          position={[-7.03, -4.91, -35.2]}
-        />
-        <mesh
-          name="R07591_Rohr_d219_1x2_PN10_16_1_4404_1_2_1_1_1_2__1001"
-          geometry={
-            nodes.R07591_Rohr_d219_1x2_PN10_16_1_4404_1_2_1_1_1_2__1001.geometry
-          }
-          material={materials.lambert1}
-          position={[-7.54, -1.21, -48.53]}
-        />
-        <mesh
-          name="R00133_Absperrklappe_Z014_A_HG_DN250_1_2"
-          geometry={nodes.R00133_Absperrklappe_Z014_A_HG_DN250_1_2.geometry}
-          material={materials.lambert1}
-          position={[-4.03, -1.26, -4.26]}
-        />
-        <mesh
-          name="R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1001"
-          geometry={nodes.R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[-11.01, 11.52, -7.39]}
-        />
-        <mesh
-          name="R08471_Losflansch_DN125_PN16_d139_7_1_4404_1_1_1_1002"
-          geometry={
-            nodes.R08471_Losflansch_DN125_PN16_d139_7_1_4404_1_1_1_1002.geometry
-          }
-          material={materials.lambert1}
-          position={[-11.02, 15.35, -4.36]}
-        />
-        <mesh
-          name="R07787_Bogen_90°_168_3x2_1_4404_1_1001"
-          geometry={nodes["R07787_Bogen_90°_168_3x2_1_4404_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[-8.56, 2.51, -4.09]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_23"
-          geometry={nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_23"].geometry}
-          material={materials.lambert1}
-          position={[-8, 1.93, -47.94]}
-        />
-        <mesh
-          name="R07793_Bogen_90°_273x2_1_4404_1_1001"
-          geometry={nodes["R07793_Bogen_90°_273x2_1_4404_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[-5.01, 10.79, -11.73]}
-        />
-        <mesh
-          name="R07793_Bogen_90°_273x2_1_4404_1_3"
-          geometry={nodes["R07793_Bogen_90°_273x2_1_4404_1_3"].geometry}
-          material={materials.lambert1}
-          position={[-10.28, 11.52, -11]}
-        />
-        <mesh
-          name="R08474_Losflansch_DN250_PN10_d273_0_1_4404_1_3"
-          geometry={
-            nodes.R08474_Losflansch_DN250_PN10_d273_0_1_4404_1_3.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.29, -4.92, -11.78]}
-        />
-        <mesh
-          name="R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1001"
-          geometry={
-            nodes.R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[-7.65, 11.54, -11.73]}
-        />
-        <mesh
-          name="R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1_1001"
-          geometry={
-            nodes.R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.27, 2.36, -11.72]}
         />
         <mesh
           name="R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1_1002"
@@ -795,24 +238,8 @@ export default function Model(props) {
           geometry={
             nodes.R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1_2.geometry
           }
-          material={materials.lambert1}
+          material={materials.barre}
           position={[-4.27, 2.36, -3.82]}
-        />
-        <mesh
-          name="R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_2"
-          geometry={
-            nodes.R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_2.geometry
-          }
-          material={materials.lambert1}
-          position={[-7.29, 11.54, -3.82]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_4001"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_4001"].geometry
-          }
-          material={materials.lambert1}
-          position={[-7.08, -4.34, -47.94]}
         />
         <mesh
           name="R08222_Vorschweissboerdel_DN250_PN10_d273_0_1_4404_1_2"
@@ -824,17 +251,26 @@ export default function Model(props) {
           position={[-4.26, -0.99, -3.82]}
         />
         <mesh
-          name="R07793_Bogen_90°_273x2_1_4404_1_1002"
-          geometry={nodes["R07793_Bogen_90°_273x2_1_4404_1_1002"].geometry}
+          name="R08471_Losflansch_DN125_PN16_d139_7_1_4404_1_1_1_1002"
+          geometry={
+            nodes.R08471_Losflansch_DN125_PN16_d139_7_1_4404_1_1_1_1002.geometry
+          }
           material={materials.lambert1}
-          position={[-19.1, -61.78, -3.19]}
-          rotation={[0, 0, -Math.PI]}
+          position={[-11.02, 15.35, -4.36]}
         />
         <mesh
-          name="R07793_Bogen_90°_273x2_1_4404_1_4"
-          geometry={nodes["R07793_Bogen_90°_273x2_1_4404_1_4"].geometry}
+          name="R00133_Absperrklappe_Z014_A_HG_DN250_1_2"
+          geometry={nodes.R00133_Absperrklappe_Z014_A_HG_DN250_1_2.geometry}
           material={materials.lambert1}
-          position={[-5.01, 10.79, -3.82]}
+          position={[-4.03, -1.26, -4.26]}
+        />
+        <mesh
+          name="R08474_Losflansch_DN250_PN10_d273_0_1_4404_1_3"
+          geometry={
+            nodes.R08474_Losflansch_DN250_PN10_d273_0_1_4404_1_3.geometry
+          }
+          material={materials.lambert1}
+          position={[-4.29, -4.92, -11.78]}
         />
         <mesh
           name="R08472_Losflansch_DN150_PN16_d168_3_1_4404_1_2001"
@@ -843,6 +279,27 @@ export default function Model(props) {
           }
           material={materials.lambert1}
           position={[-10.26, 11.52, -3.81]}
+        />
+        <mesh
+          name="R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1_1001"
+          geometry={
+            nodes.R07681_Rohr_d273x2_6_PN10_16_1_4404_1_1_1_2_1_1001.geometry
+          }
+          material={materials.barre}
+          position={[-4.27, 2.36, -11.72]}
+        />
+        <mesh
+          name="R07787_Bogen_90°_168_3x2_1_4404_1_1001"
+          geometry={nodes["R07787_Bogen_90°_168_3x2_1_4404_1_1001"].geometry}
+          material={materials.lambert1}
+          position={[-8.56, 2.51, -4.09]}
+        />
+        <mesh
+          name="R07793_Bogen_90°_273x2_1_4404_1_1002"
+          geometry={nodes["R07793_Bogen_90°_273x2_1_4404_1_1002"].geometry}
+          material={materials.lambert1}
+          position={[-19.1, -61.78, -3.19]}
+          rotation={[0, 0, -Math.PI]}
         />
         <mesh
           name="R08474_Losflansch_DN250_PN10_d273_0_1_4404_1_5"
@@ -869,39 +326,6 @@ export default function Model(props) {
           position={[-4.29, -1.56, -11.78]}
         />
         <mesh
-          name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_7001"
-          geometry={
-            nodes["R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_7001"].geometry
-          }
-          material={materials.lambert1}
-          position={[17.04, 27.03, -14.05]}
-        />
-        <mesh
-          name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_7002"
-          geometry={
-            nodes["R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_7002"].geometry
-          }
-          material={materials.lambert1}
-          position={[14.64, 35.32, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2002"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2002.geometry
-          }
-          material={materials.lambert1}
-          position={[-7.41, 15.36, -3.38]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2004"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2004.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.27, 15.37, -5.13]}
-          rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        />
-        <mesh
           name="R00191_Absperrklappe_Z011_A_HG_DN125_U1S1K08_1_1001"
           geometry={
             nodes.R00191_Absperrklappe_Z011_A_HG_DN125_U1S1K08_1_1001.geometry
@@ -910,115 +334,19 @@ export default function Model(props) {
           position={[10.93, -7.92, -13.51]}
         />
         <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__1001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__1001.geometry
-          }
-          material={materials.lambert1}
-          position={[3.36, 21.69, -14.04]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__4"
-          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__4.geometry}
-          material={materials.lambert1}
-          position={[13.46, -5.85, -14.04]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7"
-          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7.geometry}
-          material={materials.lambert1}
-          position={[5.53, 28.97, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7003"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7003.geometry
-          }
-          material={materials.lambert1}
-          position={[-10.68, 15.35, -13.82]}
-          rotation={[Math.PI / 2, 0, -Math.PI / 2]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7005"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7005.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.61, 15.37, -3.61]}
-          rotation={[Math.PI / 2, 0, Math.PI / 2]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2"
-          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2.geometry}
-          material={materials.lambert1}
-          position={[-3.75, 15.36, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2001.geometry
-          }
-          material={materials.lambert1}
-          position={[-11.01, 15.36, -9.47]}
-          rotation={[0, -Math.PI / 2, 0]}
-        />
-        <mesh
           name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2003"
           geometry={
             nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_2003.geometry
           }
-          material={materials.lambert1}
+          material={materials.barre}
           position={[-4.25, 7.96, -7.51]}
           rotation={[0, 0, -Math.PI / 2]}
         />
         <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_3"
-          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1_3.geometry}
-          material={materials.lambert1}
-          position={[10.33, 35.61, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__3"
-          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__3.geometry}
-          material={materials.lambert1}
-          position={[17.37, 12.87, -14.04]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__6"
-          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__6.geometry}
-          material={materials.lambert1}
-          position={[15.12, 28.34, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7001"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7001.geometry
-          }
-          material={materials.lambert1}
-          position={[5.53, 28.97, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7002"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7002.geometry
-          }
-          material={materials.lambert1}
-          position={[3.13, 15.7, -14.05]}
-        />
-        <mesh
-          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7004"
-          geometry={
-            nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__7004.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.26, 15.13, -7.18]}
-          rotation={[Math.PI / 2, Math.PI / 2, 0]}
-        />
-        <mesh
-          name="R09326_Bogen_45°_140x8_3_SDR17_PE100_1001"
-          geometry={nodes["R09326_Bogen_45°_140x8_3_SDR17_PE100_1001"].geometry}
-          material={materials.lambert1}
-          position={[17.14, -1.81, -14.05]}
+          name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__4"
+          geometry={nodes.R07478_Rohr_d140x8_3_PN10_PE100_3_1_1_1_1__4.geometry}
+          material={materials.barre}
+          position={[13.46, -5.85, -14.04]}
         />
         <mesh
           name="polySurface61"
@@ -1063,36 +391,10 @@ export default function Model(props) {
           position={[5.98, 23.93, -5.07]}
         />
         <mesh
-          name="P02088_BB_d90_KM_PN16_PVC_U_1_1_1_1_1_1_1_1_12001"
-          geometry={
-            nodes.P02088_BB_d90_KM_PN16_PVC_U_1_1_1_1_1_1_1_1_12001.geometry
-          }
-          material={materials.lambert1}
-          position={[6.13, 56.19, -3.91]}
-        />
-        <mesh
-          name="R07519_Rohr_d63x3_PN10_PVC_U_1_1_2_1001"
-          geometry={nodes.R07519_Rohr_d63x3_PN10_PVC_U_1_1_2_1001.geometry}
-          material={materials.lambert1}
-          position={[13.14, 55.18, -3.91]}
-        />
-        <mesh
-          name="R07520_Rohr_d75x3_6_PN10_PVC_U_1_1_1_1_1001"
-          geometry={nodes.R07520_Rohr_d75x3_6_PN10_PVC_U_1_1_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[8.94, 55.65, -3.91]}
-        />
-        <mesh
           name="R07521_Rohr_d90x4_3_PN10_PVC_U_3_1_1_1001"
           geometry={nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_3_1_1_1001.geometry}
           material={materials.lambert1}
           position={[7.45, 56.19, -4.43]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_10001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_10001"].geometry}
-          material={materials.lambert1}
-          position={[14.08, 56.2, -4.1]}
         />
         <mesh
           name="R07520_Rohr_d75x3_6_PN10_PVC_U_1_1_1_1001"
@@ -1101,16 +403,18 @@ export default function Model(props) {
           position={[8.94, 54.01, -4.39]}
         />
         <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_1_2_1_1001"
-          geometry={nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_1_2_1_1001.geometry}
-          material={materials.lambert1}
-          position={[11.04, 56.2, -3.9]}
-        />
-        <mesh
           name="R07521_Rohr_d90x4_3_PN10_PVC_U_3_1_1_1_1001"
           geometry={nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_3_1_1_1_1001.geometry}
           material={materials.lambert1}
           position={[14.28, 56.2, -4.4]}
+        />
+        <mesh
+          name="P02088_BB_d90_KM_PN16_PVC_U_1_1_1_1_1_1_1_1_12001"
+          geometry={
+            nodes.P02088_BB_d90_KM_PN16_PVC_U_1_1_1_1_1_1_1_1_12001.geometry
+          }
+          material={materials.lambert1}
+          position={[6.13, 56.19, -3.91]}
         />
         <mesh
           name="polySurface51"
@@ -1131,18 +435,6 @@ export default function Model(props) {
           position={[13.14, 54.27, -4.36]}
         />
         <mesh
-          name="polySurface118"
-          geometry={nodes.polySurface118.geometry}
-          material={materials.lambert1}
-          position={[11.7, 56.37, -13.43]}
-        />
-        <mesh
-          name="polySurface119"
-          geometry={nodes.polySurface119.geometry}
-          material={materials.lambert1}
-          position={[11.7, 56.37, -13.8]}
-        />
-        <mesh
           name="polySurface53"
           geometry={nodes.polySurface53.geometry}
           material={materials.lambert1}
@@ -1153,56 +445,6 @@ export default function Model(props) {
           geometry={nodes.polySurface47.geometry}
           material={materials.lambert1}
           position={[11.78, 54.26, -4.81]}
-        />
-        <mesh
-          name="R06320_Winkel_90°_d110_KM_1_1_2001"
-          geometry={nodes["R06320_Winkel_90°_d110_KM_1_1_2001"].geometry}
-          material={materials.lambert1}
-          position={[11.46, 56.4, -14.83]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_1001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[11.58, 54.26, -3.52]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_3001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_3001"].geometry}
-          material={materials.lambert1}
-          position={[9.98, 50.39, -13.85]}
-        />
-        <mesh
-          name="R07430_Losflansch_DN125_PN16_d140_PP_GF_3_1_1_1_20001"
-          geometry={
-            nodes.R07430_Losflansch_DN125_PN16_d140_PP_GF_3_1_1_1_20001.geometry
-          }
-          material={materials.lambert1}
-          position={[14.28, 53.26, -3.7]}
-        />
-        <mesh
-          name="R06320_Winkel_90°_d110_KM_1_1_1001"
-          geometry={nodes["R06320_Winkel_90°_d110_KM_1_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[9.69, 56.16, -15.07]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_13001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_13001"].geometry}
-          material={materials.lambert1}
-          position={[9, 21.44, -15.07]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_2001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_2001"].geometry}
-          material={materials.lambert1}
-          position={[9.98, 54.07, -3.32]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_5001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_5001"].geometry}
-          material={materials.lambert1}
-          position={[9.79, 50.59, -3.52]}
         />
         <mesh
           name="R07026_Bogen_90°_140x8_3_SDR17_PE100_1_1_1_1_13001"
@@ -1221,18 +463,20 @@ export default function Model(props) {
           position={[11.77, 54.26, -4.82]}
         />
         <mesh
-          name="R07429_Losflansch_DN100_PN16_d125_PP_GF_1001"
-          geometry={nodes.R07429_Losflansch_DN100_PN16_d125_PP_GF_1001.geometry}
-          material={materials.lambert1}
-          position={[11.69, 56.39, -13.49]}
+          name="R07522_Rohr_d110x5_3_PN10_PVC_U_2_1_1_1__1001"
+          geometry={
+            nodes.R07522_Rohr_d110x5_3_PN10_PVC_U_2_1_1_1__1001.geometry
+          }
+          material={materials.gris}
+          position={[9.48, 38.96, -15.06]}
         />
         <mesh
-          name="P02521_Losflansch_DN100_PN10_d110_KM_LK_PN10_1_1001"
+          name="R07430_Losflansch_DN125_PN16_d140_PP_GF_3_1_1_1_20001"
           geometry={
-            nodes.P02521_Losflansch_DN100_PN10_d110_KM_LK_PN10_1_1001.geometry
+            nodes.R07430_Losflansch_DN125_PN16_d140_PP_GF_3_1_1_1_20001.geometry
           }
           material={materials.lambert1}
-          position={[11.69, 56.39, -13.73]}
+          position={[14.28, 53.26, -3.7]}
         />
         <mesh
           name="R07478_Rohr_d140x8_3_PN10_PE100_3_1_1001"
@@ -1245,64 +489,8 @@ export default function Model(props) {
           geometry={
             nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_1_1001.geometry
           }
-          material={materials.lambert1}
+          material={materials.gris}
           position={[11.78, 54.26, -3.99]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_1_1_1001"
-          geometry={
-            nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[10.78, 54.27, -3.32]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_1_1_1_1001"
-          geometry={
-            nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[9.78, 53.42, -3.32]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_2_1001"
-          geometry={
-            nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_1_1_1_2_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[19.42, 50.41, -14.04]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_2_1001"
-          geometry={nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_1_1_2_1001.geometry}
-          material={materials.lambert1}
-          position={[9.79, 50.4, -8.67]}
-        />
-        <mesh
-          name="R07522_Rohr_d110x5_3_PN10_PVC_U_1_1001"
-          geometry={nodes.R07522_Rohr_d110x5_3_PN10_PVC_U_1_1001.geometry}
-          material={materials.lambert1}
-          position={[11.69, 56.39, -14.22]}
-        />
-        <mesh
-          name="R07522_Rohr_d110x5_3_PN10_PVC_U_1_1_1001"
-          geometry={nodes.R07522_Rohr_d110x5_3_PN10_PVC_U_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[10.58, 56.4, -15.06]}
-        />
-        <mesh
-          name="R07522_Rohr_d110x5_3_PN10_PVC_U_2_1_1_1__1001"
-          geometry={
-            nodes.R07522_Rohr_d110x5_3_PN10_PVC_U_2_1_1_1__1001.geometry
-          }
-          material={materials.lambert1}
-          position={[9.48, 38.96, -15.06]}
-        />
-        <mesh
-          name="polySurface112"
-          geometry={nodes.polySurface112.geometry}
-          material={materials.lambert1}
-          position={[10.31, 55.16, -13.08]}
         />
         <mesh
           name="Rechteck_DIN_10210_2_60x40x4_2_1_body1_1_001"
@@ -1325,30 +513,6 @@ export default function Model(props) {
           position={[10.8, 54.96, -6.55]}
         />
         <mesh
-          name="polySurface107"
-          geometry={nodes.polySurface107.geometry}
-          material={materials.lambert1}
-          position={[10.31, 55.16, -11.76]}
-        />
-        <mesh
-          name="polySurface108"
-          geometry={nodes.polySurface108.geometry}
-          material={materials.lambert1}
-          position={[10.31, 55.16, -10.03]}
-        />
-        <mesh
-          name="polySurface109"
-          geometry={nodes.polySurface109.geometry}
-          material={materials.lambert1}
-          position={[10.31, 55.16, -8.28]}
-        />
-        <mesh
-          name="polySurface110"
-          geometry={nodes.polySurface110.geometry}
-          material={materials.lambert1}
-          position={[10.31, 55.16, -6.55]}
-        />
-        <mesh
           name="Rechteck_DIN_10210_2_60x40x4_2_1_body1_1__4001"
           geometry={
             nodes.Rechteck_DIN_10210_2_60x40x4_2_1_body1_1__4001.geometry
@@ -1365,15 +529,9 @@ export default function Model(props) {
           position={[10.31, 55.16, -11.76]}
         />
         <mesh
-          name="polySurface105"
-          geometry={nodes.polySurface105.geometry}
-          material={materials.lambert1}
-          position={[10.31, 55.16, -9.16]}
-        />
-        <mesh
           name="Boden_1001"
           geometry={nodes.Boden_1001.geometry}
-          material={materials.lambert1}
+          material={materials.gris}
           position={[10.82, 54.83, -5.23]}
         />
         <mesh
@@ -1443,6 +601,12 @@ export default function Model(props) {
           position={[13.14, 54.27, -4.78]}
         />
         <mesh
+          name="R07425_Losflansch_DN50_PN16_d63_PP_GF_1_1001"
+          geometry={nodes.R07425_Losflansch_DN50_PN16_d63_PP_GF_1_1001.geometry}
+          material={materials.lambert1}
+          position={[13.14, 54.27, -4.8]}
+        />
+        <mesh
           name="R20022_Rohrstück_d63x3_8x70_PN10_PE100_1_1001"
           geometry={
             nodes.R20022_Rohrstück_d63x3_8x70_PN10_PE100_1_1001.geometry
@@ -1451,24 +615,10 @@ export default function Model(props) {
           position={[13.14, 54.26, -5.13]}
         />
         <mesh
-          name="R07425_Losflansch_DN50_PN16_d63_PP_GF_1_1001"
-          geometry={nodes.R07425_Losflansch_DN50_PN16_d63_PP_GF_1_1001.geometry}
-          material={materials.lambert1}
-          position={[13.14, 54.27, -4.8]}
-        />
-        <mesh
           name="polySurface59"
           geometry={nodes.polySurface59.geometry}
           material={materials.lambert1}
           position={[14.28, 56.2, -4.84]}
-        />
-        <mesh
-          name="R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_4001"
-          geometry={
-            nodes.R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_4001.geometry
-          }
-          material={materials.lambert1}
-          position={[14.28, 56.2, -4.82]}
         />
         <mesh
           name="R20024_Rohrstück_d90x5_4x1500_PN10_PE100_1_2001"
@@ -1477,6 +627,14 @@ export default function Model(props) {
           }
           material={materials.lambert1}
           position={[14.28, 56.2, -5.17]}
+        />
+        <mesh
+          name="R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_4001"
+          geometry={
+            nodes.R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_4001.geometry
+          }
+          material={materials.lambert1}
+          position={[14.28, 56.2, -4.82]}
         />
         <mesh
           name="R01192_â_3002"
@@ -1519,20 +677,20 @@ export default function Model(props) {
           position={[7.45, 56.2, -4.81]}
         />
         <mesh
-          name="R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_3001"
-          geometry={
-            nodes.R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_3001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.45, 56.19, -4.82]}
-        />
-        <mesh
           name="R20024_Rohrstück_d90x5_4x1500_PN10_PE100_1_1001"
           geometry={
             nodes.R20024_Rohrstück_d90x5_4x1500_PN10_PE100_1_1001.geometry
           }
           material={materials.lambert1}
           position={[7.45, 56.19, -9.27]}
+        />
+        <mesh
+          name="R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_3001"
+          geometry={
+            nodes.R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_3001.geometry
+          }
+          material={materials.lambert1}
+          position={[7.45, 56.19, -4.82]}
         />
         <mesh
           name="polySurface67"
@@ -1569,24 +727,16 @@ export default function Model(props) {
           position={[8.79, 56.4, -13.35]}
         />
         <mesh
-          name="R07021_Bogen_90°_63x3_8_SDR17_PE100_1_1001"
-          geometry={
-            nodes["R07021_Bogen_90°_63x3_8_SDR17_PE100_1_1001"].geometry
-          }
+          name="R01192_â_2002"
+          geometry={nodes.R01192_â_2002.geometry}
           material={materials.lambert1}
-          position={[6.13, 54.53, -12.71]}
+          position={[6.14, 54.65, -13.37]}
         />
         <mesh
           name="P04747_Einlegteil_DN50_PN16_d63_KM_1_2001"
           geometry={nodes.P04747_Einlegteil_DN50_PN16_d63_KM_1_2001.geometry}
           material={materials.lambert1}
           position={[6.14, 54.65, -13.41]}
-        />
-        <mesh
-          name="R01192_â_2002"
-          geometry={nodes.R01192_â_2002.geometry}
-          material={materials.lambert1}
-          position={[6.14, 54.65, -13.37]}
         />
         <mesh
           name="R08931_Einschraubteil_DN50_PN16_d63_SS_1_2001"
@@ -1597,10 +747,12 @@ export default function Model(props) {
           position={[6.13, 54.65, -13.24]}
         />
         <mesh
-          name="N05_Temperatur_DN15_1002"
-          geometry={nodes.N05_Temperatur_DN15_1002.geometry}
+          name="R07021_Bogen_90°_63x3_8_SDR17_PE100_1_1001"
+          geometry={
+            nodes["R07021_Bogen_90°_63x3_8_SDR17_PE100_1_1001"].geometry
+          }
           material={materials.lambert1}
-          position={[5.89, 53.23, -7.67]}
+          position={[6.13, 54.53, -12.71]}
         />
         <mesh
           name="N04_Füllstand_DN15_1002"
@@ -1609,31 +761,16 @@ export default function Model(props) {
           position={[5.89, 53.23, -5.68]}
         />
         <mesh
-          name="P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_3001"
-          geometry={
-            nodes.P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_3001
-              .geometry
-          }
+          name="N05_Temperatur_DN15_1002"
+          geometry={nodes.N05_Temperatur_DN15_1002.geometry}
           material={materials.lambert1}
-          position={[8.94, 54.01, -4.58]}
-        />
-        <mesh
-          name="P00972_Winkel_90°_d63_KM_1_1_1_1_1_2001"
-          geometry={nodes["P00972_Winkel_90°_d63_KM_1_1_1_1_1_2001"].geometry}
-          material={materials.lambert1}
-          position={[6.13, 54.73, -13.97]}
+          position={[5.89, 53.23, -7.67]}
         />
         <mesh
           name="P00934_Reduktion_kurz_d32_KS_d20_KM_1_1001"
           geometry={nodes.P00934_Reduktion_kurz_d32_KS_d20_KM_1_1001.geometry}
           material={materials.lambert1}
           position={[9.62, 53.35, -3.15]}
-        />
-        <mesh
-          name="P00972_Winkel_90°_d63_KM_1_1_1_1_1_3001"
-          geometry={nodes["P00972_Winkel_90°_d63_KM_1_1_1_1_1_3001"].geometry}
-          material={materials.lambert1}
-          position={[13.14, 54.43, -4.01]}
         />
         <mesh
           name="P01715_Losflansch_DN80_PN10_d90_KM_LK_PN10_1_2_1_1_1_1_15001"
@@ -1645,15 +782,6 @@ export default function Model(props) {
           position={[14.28, 56.2, -4.59]}
         />
         <mesh
-          name="P01715_Losflansch_DN80_PN10_d90_KM_LK_PN10_1_2_1_1_1_1_14001"
-          geometry={
-            nodes.P01715_Losflansch_DN80_PN10_d90_KM_LK_PN10_1_2_1_1_1_1_14001
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[7.45, 56.19, -4.59]}
-        />
-        <mesh
           name="P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_1001"
           geometry={
             nodes.P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_1001
@@ -1661,6 +789,54 @@ export default function Model(props) {
           }
           material={materials.lambert1}
           position={[9.79, 52.8, -3.32]}
+        />
+        <mesh
+          name="P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_3001"
+          geometry={
+            nodes.P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_3001
+              .geometry
+          }
+          material={materials.lambert1}
+          position={[8.94, 54.01, -4.58]}
+        />
+        <mesh
+          name="P03012_Winkel_90°_d75_KM_1_1_1_1001"
+          geometry={nodes["P03012_Winkel_90°_d75_KM_1_1_1_1001"].geometry}
+          material={materials.lambert1}
+          position={[8.94, 54.13, -4.1]}
+        />
+        <mesh
+          name="P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_2001"
+          geometry={
+            nodes.P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_2001
+              .geometry
+          }
+          material={materials.lambert1}
+          position={[9.79, 51, -3.32]}
+        />
+        <mesh
+          name="PE_Platte_U1P1P01_1_1001"
+          geometry={nodes.PE_Platte_U1P1P01_1_1001.geometry}
+          material={materials.lambert1}
+          position={[9.79, 51.9, -2.76]}
+        />
+        <mesh
+          name="R06239_Kugelhahn_SK_EE_FC_DN65_PN10_d75_KM_U1S1H02_1_1001"
+          geometry={
+            nodes.R06239_Kugelhahn_SK_EE_FC_DN65_PN10_d75_KM_U1S1H02_1_1001
+              .geometry
+          }
+          material={materials.lambert1}
+          position={[8.36, 54.98, -3.95]}
+        />
+        <mesh
+          name="P01715_Losflansch_DN80_PN10_d90_KM_LK_PN10_1_2_1_1_1_1_14001"
+          geometry={
+            nodes.P01715_Losflansch_DN80_PN10_d90_KM_LK_PN10_1_2_1_1_1_1_14001
+              .geometry
+          }
+          material={materials.lambert1}
+          position={[7.45, 56.19, -4.59]}
         />
         <mesh
           name="P01715_Losflansch_DN80_PN10_d90_KM_LK_PN10_1_2_1_1_1_1_4001"
@@ -1680,44 +856,10 @@ export default function Model(props) {
           position={[13.14, 54.27, -4.37]}
         />
         <mesh
-          name="P02750_Absperrklappe_Z011_A_RG_DN80_U1P1K01_1_1001"
-          geometry={
-            nodes.P02750_Absperrklappe_Z011_A_RG_DN80_U1P1K01_1_1001.geometry
-          }
+          name="R07519_Rohr_d63x3_PN10_PVC_U_3_1_1001"
+          geometry={nodes.R07519_Rohr_d63x3_PN10_PVC_U_3_1_1001.geometry}
           material={materials.lambert1}
-          position={[11.75, 54.09, -4.57]}
-        />
-        <mesh
-          name="P01718_Bundbuchse_DN65_PN16_d75_KM_1_1_2001"
-          geometry={nodes.P01718_Bundbuchse_DN65_PN16_d75_KM_1_1_2001.geometry}
-          material={materials.lambert1}
-          position={[9.79, 51.03, -3.32]}
-        />
-        <mesh
-          name="P03012_Winkel_90°_d75_KM_1_1_1_1001"
-          geometry={nodes["P03012_Winkel_90°_d75_KM_1_1_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[8.94, 54.13, -4.1]}
-        />
-        <mesh
-          name="PE_Platte_U1P1P01_1_1001"
-          geometry={nodes.PE_Platte_U1P1P01_1_1001.geometry}
-          material={materials.lambert1}
-          position={[9.79, 51.9, -2.76]}
-        />
-        <mesh
-          name="R10955_Losflansch_ANSI_B_16_5_3_Class_150_1_1001"
-          geometry={
-            nodes.R10955_Losflansch_ANSI_B_16_5_3_Class_150_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[6.14, 56.19, -3.91]}
-        />
-        <mesh
-          name="P00972_Winkel_90°_d63_KM_1_1_1_1_1_1001"
-          geometry={nodes["P00972_Winkel_90°_d63_KM_1_1_1_1_1_1001"].geometry}
-          material={materials.lambert1}
-          position={[6.06, 56.26, -14.05]}
+          position={[6.13, 54.65, -13.59]}
         />
         <mesh
           name="R01168_Absperrklappe_Z011_A_RG_DN50_U1P1K02_1_1001"
@@ -1728,31 +870,20 @@ export default function Model(props) {
           position={[13.12, 54.11, -4.58]}
         />
         <mesh
-          name="R07519_Rohr_d63x3_PN10_PVC_U_2_1_1_1001"
-          geometry={nodes.R07519_Rohr_d63x3_PN10_PVC_U_2_1_1_1001.geometry}
-          material={materials.lambert1}
-          position={[5.6, 56.34, -14.05]}
-        />
-        <mesh
-          name="R07519_Rohr_d63x3_PN10_PVC_U_3_1_1001"
-          geometry={nodes.R07519_Rohr_d63x3_PN10_PVC_U_3_1_1001.geometry}
-          material={materials.lambert1}
-          position={[6.13, 54.65, -13.59]}
-        />
-        <mesh
-          name="P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_2001"
+          name="R10955_Losflansch_ANSI_B_16_5_3_Class_150_1_1001"
           geometry={
-            nodes.P01716_Losflansch_DN65_PN10_d75_KM_LK_PN10_1_1_1_1_2001
-              .geometry
+            nodes.R10955_Losflansch_ANSI_B_16_5_3_Class_150_1_1001.geometry
           }
           material={materials.lambert1}
-          position={[9.79, 51, -3.32]}
+          position={[6.14, 56.19, -3.91]}
         />
         <mesh
-          name="P01905_Bundbuchse_DN50_PN16_d63_KM_1_2001"
-          geometry={nodes.P01905_Bundbuchse_DN50_PN16_d63_KM_1_2001.geometry}
+          name="P02750_Absperrklappe_Z011_A_RG_DN80_U1P1K01_1_1001"
+          geometry={
+            nodes.P02750_Absperrklappe_Z011_A_RG_DN80_U1P1K01_1_1001.geometry
+          }
           material={materials.lambert1}
-          position={[5.17, 56.34, -14.05]}
+          position={[11.75, 54.09, -4.57]}
         />
         <mesh
           name="R09872_Kreiselpumpe_CRN_32_1_A_F_G_V_HQQV_60Hz_1_1001"
@@ -1761,66 +892,6 @@ export default function Model(props) {
           }
           material={materials.lambert1}
           position={[9.79, 51.87, -3.83]}
-        />
-        <mesh
-          name="R06239_Kugelhahn_SK_EE_FC_DN65_PN10_d75_KM_U1S1H02_1_1001"
-          geometry={
-            nodes.R06239_Kugelhahn_SK_EE_FC_DN65_PN10_d75_KM_U1S1H02_1_1001
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[8.36, 54.98, -3.95]}
-        />
-        <mesh
-          name="R02356_Kugelhahn_SK_EE_FC_DN50_PN10_d63_KM_U1S1H01_1_1001"
-          geometry={
-            nodes.R02356_Kugelhahn_SK_EE_FC_DN50_PN10_d63_KM_U1S1H01_1_1001
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[6.1, 55.52, -14.5]}
-        />
-        <mesh
-          name="R09538_Blindverschluss_1_1_body1001"
-          geometry={nodes.R09538_Blindverschluss_1_1_body1001.geometry}
-          material={materials.lambert1}
-          position={[14.76, 46.02, -7.88]}
-          rotation={[Math.PI / 2, Math.PI / 2, 0]}
-        />
-        <mesh
-          name="R09538_Blindverschluss_1_1_body1_instance001"
-          geometry={nodes.R09538_Blindverschluss_1_1_body1_instance001.geometry}
-          material={materials.lambert1}
-          position={[14.76, 46.31, -7.88]}
-          rotation={[Math.PI / 2, Math.PI / 2, 0]}
-        />
-        <mesh
-          name="R09539_Schildträ_body1005"
-          geometry={nodes.R09539_Schildträ_body1005.geometry}
-          material={materials.lambert1}
-          position={[14.74, 46.31, -7.96]}
-          rotation={[0, 0, Math.PI / 2]}
-        />
-        <mesh
-          name="R09539_Schildträ_body1_instance001"
-          geometry={nodes.R09539_Schildträ_body1_instance001.geometry}
-          material={materials.lambert1}
-          position={[14.74, 46.02, -7.96]}
-          rotation={[0, 0, Math.PI / 2]}
-        />
-        <mesh
-          name="R09539_Schildträ_body1_instance_2001"
-          geometry={nodes.R09539_Schildträ_body1_instance_2001.geometry}
-          material={materials.lambert1}
-          position={[14.74, 45.72, -7.96]}
-          rotation={[0, 0, Math.PI / 2]}
-        />
-        <mesh
-          name="R09539_Schildträ_body1_instance_3001"
-          geometry={nodes.R09539_Schildträ_body1_instance_3001.geometry}
-          material={materials.lambert1}
-          position={[14.74, 45.42, -7.96]}
-          rotation={[0, 0, Math.PI / 2]}
         />
         <mesh
           name="R09540_Bezeichnungsschild_17_5x28mm_2_1_body1001"
@@ -1902,16 +973,10 @@ export default function Model(props) {
           rotation={[Math.PI, 0, -Math.PI / 2]}
         />
         <mesh
-          name="R08909_HMI_TP_1500_COMFORT_Panel_1001"
-          geometry={nodes.R08909_HMI_TP_1500_COMFORT_Panel_1001.geometry}
+          name="R09710_Kompakt_Schaltschrank001"
+          geometry={nodes.R09710_Kompakt_Schaltschrank001.geometry}
           material={materials.lambert1}
-          position={[14.7, 46.02, -9.56]}
-        />
-        <mesh
-          name="R09536_Not_Halt_Pilzdrucktaster_Rot_1001"
-          geometry={nodes.R09536_Not_Halt_Pilzdrucktaster_Rot_1001.geometry}
-          material={materials.lambert1}
-          position={[14.66, 45.87, -8.32]}
+          position={[15.2, 45.42, -9.05]}
         />
         <mesh
           name="Touchscreen002"
@@ -1926,10 +991,16 @@ export default function Model(props) {
           position={[15.96, 45.85, -7.19]}
         />
         <mesh
-          name="R09710_Kompakt_Schaltschrank001"
-          geometry={nodes.R09710_Kompakt_Schaltschrank001.geometry}
+          name="R08909_HMI_TP_1500_COMFORT_Panel_1001"
+          geometry={nodes.R08909_HMI_TP_1500_COMFORT_Panel_1001.geometry}
           material={materials.lambert1}
-          position={[15.2, 45.42, -9.05]}
+          position={[14.7, 46.02, -9.56]}
+        />
+        <mesh
+          name="R09536_Not_Halt_Pilzdrucktaster_Rot_1001"
+          geometry={nodes.R09536_Not_Halt_Pilzdrucktaster_Rot_1001.geometry}
+          material={materials.lambert1}
+          position={[14.66, 45.87, -8.32]}
         />
         <mesh
           name="R09537_Schutzkragen_für_Not_Halt_Pilzdrucktaster001"
@@ -1940,20 +1011,12 @@ export default function Model(props) {
           position={[14.68, 45.87, -8.26]}
         />
         <mesh
-          name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_15001"
+          name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_13001"
           geometry={
-            nodes.R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_15001.geometry
+            nodes.R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_13001.geometry
           }
           material={materials.lambert1}
-          position={[7.05, 26.96, -10.79]}
-        />
-        <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_25"
-          geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_25.geometry
-          }
-          material={materials.lambert1}
-          position={[7.42, 27.69, -12.04]}
+          position={[7.04, 26.96, -6.81]}
         />
         <mesh
           name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_16001"
@@ -1964,20 +1027,52 @@ export default function Model(props) {
           position={[7.03, 26.96, -4.83]}
         />
         <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_29"
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_27"
           geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_29.geometry
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_27.geometry
           }
           material={materials.lambert1}
-          position={[7.42, 27.69, -6.09]}
+          position={[7.42, 27.69, -8.08]}
         />
         <mesh
-          name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_13001"
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_30"
           geometry={
-            nodes.R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_13001.geometry
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_30.geometry
           }
           material={materials.lambert1}
-          position={[7.04, 26.96, -6.81]}
+          position={[7.44, 12.8, -6.09]}
+        />
+        <mesh
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_34"
+          geometry={
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_34.geometry
+          }
+          material={materials.lambert1}
+          position={[7.42, 27.69, -10.04]}
+        />
+        <mesh
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_31"
+          geometry={
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_31.geometry
+          }
+          material={materials.lambert1}
+          position={[7.42, 27.69, -4.09]}
+        />
+        <mesh
+          name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_15001"
+          geometry={
+            nodes.R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_15001.geometry
+          }
+          material={materials.lambert1}
+          position={[7.05, 26.96, -10.79]}
+        />
+        <mesh
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_24"
+          geometry={
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_24.geometry
+          }
+          material={materials.lambert1}
+          position={[7.42, 27.69, -14.02]}
         />
         <mesh
           name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_26"
@@ -1988,12 +1083,28 @@ export default function Model(props) {
           position={[7.44, 12.8, -12.04]}
         />
         <mesh
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_29"
+          geometry={
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_29.geometry
+          }
+          material={materials.lambert1}
+          position={[7.42, 27.69, -6.09]}
+        />
+        <mesh
           name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_33"
           geometry={
             nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_33.geometry
           }
           material={materials.lambert1}
           position={[7.44, 12.8, -10.04]}
+        />
+        <mesh
+          name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_14001"
+          geometry={
+            nodes.R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_14001.geometry
+          }
+          material={materials.lambert1}
+          position={[7.07, 26.96, -8.8]}
         />
         <mesh
           name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_17001"
@@ -2005,52 +1116,12 @@ export default function Model(props) {
           position={[7.44, 12.8, -14.02]}
         />
         <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_30"
+          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_25"
           geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_30.geometry
+            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_25.geometry
           }
           material={materials.lambert1}
-          position={[7.44, 12.8, -6.09]}
-        />
-        <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_27"
-          geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_27.geometry
-          }
-          material={materials.lambert1}
-          position={[7.42, 27.69, -8.08]}
-        />
-        <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_34"
-          geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_34.geometry
-          }
-          material={materials.lambert1}
-          position={[7.42, 27.69, -10.04]}
-        />
-        <mesh
-          name="R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_14001"
-          geometry={
-            nodes.R00180_Gruvlok_Kupplung_Fig_705_DN65_d73_0_1_14001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.07, 26.96, -8.8]}
-        />
-        <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_24"
-          geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_24.geometry
-          }
-          material={materials.lambert1}
-          position={[7.42, 27.69, -14.02]}
-        />
-        <mesh
-          name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_31"
-          geometry={
-            nodes.R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_31.geometry
-          }
-          material={materials.lambert1}
-          position={[7.42, 27.69, -4.09]}
+          position={[7.42, 27.69, -12.04]}
         />
         <mesh
           name="R00181_Gruvlok_Kupplung_Fig_705_DN200_d219_1_3_1_1_28"
@@ -2069,80 +1140,12 @@ export default function Model(props) {
           position={[7.44, 12.8, -4.09]}
         />
         <mesh
-          name="P02132_Reduktion_kurz_d90_KS_d50_KM_1_2001"
-          geometry={nodes.P02132_Reduktion_kurz_d90_KS_d50_KM_1_2001.geometry}
-          material={materials.lambert1}
-          position={[5.78, 23.83, -15.43]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_15001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_15001"].geometry}
-          material={materials.lambert1}
-          position={[5.98, 21.34, -14.87]}
-        />
-        <mesh
-          name="R06282_Reduktion_kurz_d50_KS_d20_KM_1_2001"
-          geometry={nodes.R06282_Reduktion_kurz_d50_KS_d20_KM_1_2001.geometry}
-          material={materials.lambert1}
-          position={[5.78, 23.83, -15.47]}
-        />
-        <mesh
-          name="P00967_Winkel_90°_d20_PVC_U_1_3_1_1_3_1_1001"
-          geometry={
-            nodes["P00967_Winkel_90°_d20_PVC_U_1_3_1_1_3_1_1001"].geometry
-          }
-          material={materials.lambert1}
-          position={[5.81, 23.83, -15.66]}
-        />
-        <mesh
           name="P01906_Druckschlauchtülle_d50_KS_d50_ST_1_8001"
           geometry={
             nodes.P01906_Druckschlauchtülle_d50_KS_d50_ST_1_8001.geometry
           }
           material={materials.lambert1}
           position={[6.38, 24.43, -5.14]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_14001"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_14001"].geometry}
-          material={materials.lambert1}
-          position={[5.79, 21.54, -4.14]}
-        />
-        <mesh
-          name="R00368_WI_90°_d90_PVC_U_1_1_1_16"
-          geometry={nodes["R00368_WI_90°_d90_PVC_U_1_1_1_16"].geometry}
-          material={materials.lambert1}
-          position={[5.78, 23.65, -4.14]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_2_1_2_1_1001"
-          geometry={nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_2_1_2_1_1001.geometry}
-          material={materials.lambert1}
-          position={[5.79, 22.68, -3.94]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_4_1_1_1_1_1_1_1001"
-          geometry={
-            nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_4_1_1_1_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[5.79, 21.35, -9.41]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_4_1_1_1_1_1_1_2"
-          geometry={
-            nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_4_1_1_1_1_1_1_2.geometry
-          }
-          material={materials.lambert1}
-          position={[5.79, 23.84, -9.41]}
-        />
-        <mesh
-          name="R07521_Rohr_d90x4_3_PN10_PVC_U_4_1_1_1_1__1001"
-          geometry={
-            nodes.R07521_Rohr_d90x4_3_PN10_PVC_U_4_1_1_1_1__1001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.54, 21.34, -15.06]}
         />
         <mesh
           name="polySurface121"
@@ -2158,6 +1161,15 @@ export default function Model(props) {
           }
           material={materials.lambert1}
           position={[7.41, 35.79, -4.24]}
+        />
+        <mesh
+          name="R09871_Kreiselpumpe_NB_65_125_133_A_F2_K_V_BQQV_U1S1P01_1_2001"
+          geometry={
+            nodes.R09871_Kreiselpumpe_NB_65_125_133_A_F2_K_V_BQQV_U1S1P01_1_2001
+              .geometry
+          }
+          material={materials.lambert1}
+          position={[6.38, 50.81, -3.74]}
         />
         <mesh
           name="R07427_Losflansch_DN80_PN16_d90_PP_GF_1_1_2001"
@@ -2181,112 +1193,31 @@ export default function Model(props) {
           material={materials.lambert1}
           position={[6.36, 54.51, -4.54]}
         />
-        <mesh
-          name="R09871_Kreiselpumpe_NB_65_125_133_A_F2_K_V_BQQV_U1S1P01_1_2001"
-          geometry={
-            nodes.R09871_Kreiselpumpe_NB_65_125_133_A_F2_K_V_BQQV_U1S1P01_1_2001
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[6.38, 50.81, -3.74]}
-        />
-        <mesh
-          name="polySurface123"
-          geometry={nodes.polySurface123.geometry}
-          material={materials.lambert1}
-          position={[7.4, 37.04, -6.8]}
-        />
-        <mesh
-          name="polySurface124"
-          geometry={nodes.polySurface124.geometry}
-          material={materials.lambert1}
-          position={[7.4, 38.85, -4.2]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_22001"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_22001"].geometry
-          }
-          material={materials.lambert1}
-          position={[7.4, 33.62, -12.23]}
-          rotation={[-Math.PI / 2, 0, Math.PI]}
-        />
-        <mesh
-          name="R08494_Vorschweissboerdel_kurz_DN125_PN10_d139_7_1_4404_2_1"
-          geometry={
-            nodes.R08494_Vorschweissboerdel_kurz_DN125_PN10_d139_7_1_4404_2_1
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[7.4, 37.05, -6.01]}
-        />
-        <mesh
-          name="R07591_Rohr_d219_1x2_PN10_16_1_44042_1_1_1_2001"
-          geometry={
-            nodes.R07591_Rohr_d219_1x2_PN10_16_1_44042_1_1_1_2001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.42, 33.91, -8.69]}
-        />
-        <mesh
-          name="R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_2001"
-          geometry={
-            nodes.R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_2001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.43, 28.55, -4.11]}
-        />
-        <mesh
-          name="R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_3"
-          geometry={nodes.R07591_Rohr_d219_1x2_PN10_16_1_4404_1_1_1_3.geometry}
-          material={materials.lambert1}
-          position={[7.43, 30.79, -6.4]}
-        />
-        <mesh
-          name="R20282_Flachdichtung_DN125_PN16_2mm_1_1001"
-          geometry={nodes.R20282_Flachdichtung_DN125_PN16_2mm_1_1001.geometry}
-          material={materials.lambert1}
-          position={[7.4, 37.05, -5.96]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_15001"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_15001"].geometry
-          }
-          material={materials.lambert1}
-          position={[7.41, 30.2, -4.7]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_20"
-          geometry={nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_20"].geometry}
-          material={materials.lambert1}
-          position={[7.41, 36.46, -8.11]}
-        />
-        <mesh
-          name="R08254_Losflansch_DN125_PN16_d139_7_1_4301_1_2_7001"
-          geometry={
-            nodes.R08254_Losflansch_DN125_PN16_d139_7_1_4301_1_2_7001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.4, 37.05, -6.02]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_19"
-          geometry={nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_19"].geometry}
-          material={materials.lambert1}
-          position={[7.41, 31.37, -8.11]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_1_1_21"
-          geometry={nodes["R07790_Bogen_90°_219_1x2_0_1_4404_1_1_21"].geometry}
-          material={materials.lambert1}
-          position={[7.4, 40.24, -4.77]}
-        />
+        <group name="polySurface123" position={[7.4, 37.04, -6.8]}>
+          <mesh
+            name="Mesh1046"
+            geometry={nodes.Mesh1046.geometry}
+            material={materials.barre}
+          />
+          <mesh
+            name="Mesh1046_1"
+            geometry={nodes.Mesh1046_1.geometry}
+            material={materials.lambert1}
+          />
+        </group>
         <mesh
           name="R07674_Rohr_d33_7x1_PN10_16_1_4404_1_1_2001"
           geometry={nodes.R07674_Rohr_d33_7x1_PN10_16_1_4404_1_1_2001.geometry}
           material={materials.lambert1}
           position={[7.4, 39.43, -3.56]}
+        />
+        <mesh
+          name="R08255_Losflansch_DN150_PN16_d168_3_1_4301_1_1_2001"
+          geometry={
+            nodes.R08255_Losflansch_DN150_PN16_d168_3_1_4301_1_1_2001.geometry
+          }
+          material={materials.lambert1}
+          position={[7.4, 37.82, -4.19]}
         />
         <mesh
           name="R08495_Vorschweissboerdel_kurz_DN150_PN10_d168_3_1_4404_1_1"
@@ -2298,66 +1229,39 @@ export default function Model(props) {
           position={[7.4, 37.8, -4.19]}
         />
         <mesh
-          name="R08255_Losflansch_DN150_PN16_d168_3_1_4301_1_1_2001"
-          geometry={
-            nodes.R08255_Losflansch_DN150_PN16_d168_3_1_4301_1_1_2001.geometry
-          }
-          material={materials.lambert1}
-          position={[7.4, 37.82, -4.19]}
-        />
-        <mesh
           name="R20283_Flachdichtung_DN150_PN16_2mm_1_2001"
           geometry={nodes.R20283_Flachdichtung_DN150_PN16_2mm_1_2001.geometry}
           material={materials.lambert1}
           position={[7.4, 37.75, -4.19]}
         />
         <mesh
-          name="R03103_Dummyrohr_UF_D_C200_3000_1_3001"
-          geometry={nodes.R03103_Dummyrohr_UF_D_C200_3000_1_3001.geometry}
+          name="R08254_Losflansch_DN125_PN16_d139_7_1_4301_1_2_7001"
+          geometry={
+            nodes.R08254_Losflansch_DN125_PN16_d139_7_1_4301_1_2_7001.geometry
+          }
           material={materials.lambert1}
-          position={[7.42, 23.31, -14.05]}
+          position={[7.4, 37.05, -6.02]}
         />
         <mesh
-          name="R03103_Dummyrohr_UF_D_C200_3000_1_5"
-          geometry={nodes.R03103_Dummyrohr_UF_D_C200_3000_1_5.geometry}
+          name="R08494_Vorschweissboerdel_kurz_DN125_PN10_d139_7_1_4404_2_1"
+          geometry={
+            nodes.R08494_Vorschweissboerdel_kurz_DN125_PN10_d139_7_1_4404_2_1
+              .geometry
+          }
           material={materials.lambert1}
-          position={[7.42, 20.2, -12.06]}
+          position={[7.4, 37.05, -6.01]}
         />
         <mesh
-          name="R03103_Dummyrohr_UF_D_C200_3000_1_6"
-          geometry={nodes.R03103_Dummyrohr_UF_D_C200_3000_1_6.geometry}
+          name="R20282_Flachdichtung_DN125_PN16_2mm_1_1001"
+          geometry={nodes.R20282_Flachdichtung_DN125_PN16_2mm_1_1001.geometry}
           material={materials.lambert1}
-          position={[7.42, 20.2, -10.08]}
-        />
-        <mesh
-          name="R03103_Dummyrohr_UF_D_C200_3000_1_7"
-          geometry={nodes.R03103_Dummyrohr_UF_D_C200_3000_1_7.geometry}
-          material={materials.lambert1}
-          position={[7.42, 20.2, -8.09]}
-        />
-        <mesh
-          name="R03103_Dummyrohr_UF_D_C200_3000_1_8"
-          geometry={nodes.R03103_Dummyrohr_UF_D_C200_3000_1_8.geometry}
-          material={materials.lambert1}
-          position={[7.42, 20.2, -6.09]}
-        />
-        <mesh
-          name="R03103_Dummyrohr_UF_D_C200_3000_1_9"
-          geometry={nodes.R03103_Dummyrohr_UF_D_C200_3000_1_9.geometry}
-          material={materials.lambert1}
-          position={[7.42, 20.2, -4.12]}
+          position={[7.4, 37.05, -5.96]}
         />
         <mesh
           name="Würfel002"
           geometry={nodes.Würfel002.geometry}
           material={materials.lambert1}
           position={[7.15, 20.11, -9]}
-        />
-        <mesh
-          name="Containerboden001"
-          geometry={nodes.Containerboden001.geometry}
-          material={materials.lambert1}
-          position={[10.33, 39.6, -1.85]}
         />
         <mesh
           name="pCylinder4"
@@ -2371,54 +1275,18 @@ export default function Model(props) {
           material={materials.lambert1}
           position={[7.93, 54.77, -13.32]}
         />
-        <mesh
-          name="polySurface71"
-          geometry={nodes.polySurface71.geometry}
-          material={materials.lambert1}
-          position={[7.45, 56.2, -4.06]}
-        />
-        <mesh
-          name="pCylinder2"
-          geometry={nodes.pCylinder2.geometry}
-          material={materials.lambert1}
-          position={[7.85, 13.55, -3.4]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_22"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_22"].geometry
-          }
-          material={materials.lambert1}
-          position={[7.44, 11.87, -9.07]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_25"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_25"].geometry
-          }
-          material={materials.lambert1}
-          position={[7.44, 28.62, -7.09]}
-        />
-        <mesh
-          name="R20716_Druckschlauchtülle_d50_KS_d52_ST_2_6001"
-          geometry={
-            nodes.R20716_Druckschlauchtülle_d50_KS_d52_ST_2_6001.geometry
-          }
-          material={materials.lambert1}
-          position={[6.56, 25.28, -5.12]}
-        />
-        <mesh
-          name="R20716_Druckschlauchtülle_d50_KS_d52_ST_2_9"
-          geometry={nodes.R20716_Druckschlauchtülle_d50_KS_d52_ST_2_9.geometry}
-          material={materials.lambert1}
-          position={[6.56, 25.28, -11.11]}
-        />
-        <mesh
-          name="pCylinder5"
-          geometry={nodes.pCylinder5.geometry}
-          material={materials.lambert1}
-          position={[7.85, 13.55, -9.35]}
-        />
+        <group name="Containerboden001" position={[10.33, 39.6, -1.85]}>
+          <mesh
+            name="Mesh1361"
+            geometry={nodes.Mesh1361.geometry}
+            material={materials.lambert1}
+          />
+          <mesh
+            name="Mesh1361_1"
+            geometry={nodes.Mesh1361_1.geometry}
+            material={materials.tole}
+          />
+        </group>
         <mesh
           name="pCylinder3"
           geometry={nodes.pCylinder3.geometry}
@@ -2438,103 +1306,22 @@ export default function Model(props) {
           position={[12.91, 54.77, -13.32]}
         />
         <mesh
-          name="polySurface65"
-          geometry={nodes.polySurface65.geometry}
-          material={materials.lambert1}
-          position={[13.13, 56.03, -3.91]}
-        />
-        <mesh
-          name="polySurface70"
-          geometry={nodes.polySurface70.geometry}
-          material={materials.lambert1}
-          position={[8.94, 56.03, -3.91]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_16001"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_16001"]
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[7.44, 11.87, -13.06]}
-        />
-        <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_24"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_24"].geometry
-          }
-          material={materials.lambert1}
-          position={[7.44, 28.62, -11.08]}
-        />
-        <mesh
-          name="R20716_Druckschlauchtülle_d50_KS_d52_ST_2_11"
-          geometry={nodes.R20716_Druckschlauchtülle_d50_KS_d52_ST_2_11.geometry}
-          material={materials.lambert1}
-          position={[5.99, 24.03, -15.07]}
-        />
-        <mesh
           name="polySurface77"
           geometry={nodes.polySurface77.geometry}
           material={materials.lambert1}
           position={[9.65, 54.9, -5.03]}
         />
         <mesh
-          name="R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_23"
-          geometry={
-            nodes["R07790_Bogen_90°_219_1x2_0_1_4404_gekürzt_3_1_4_23"].geometry
-          }
+          name="pCylinder2"
+          geometry={nodes.pCylinder2.geometry}
           material={materials.lambert1}
-          position={[7.44, 11.87, -5.11]}
+          position={[7.85, 13.55, -3.4]}
         />
         <mesh
-          name="R20716_Druckschlauchtülle_d50_KS_d52_ST_2_8001"
-          geometry={
-            nodes.R20716_Druckschlauchtülle_d50_KS_d52_ST_2_8001.geometry
-          }
+          name="pCylinder5"
+          geometry={nodes.pCylinder5.geometry}
           material={materials.lambert1}
-          position={[6.56, 25.28, -9.15]}
-        />
-        <mesh
-          name="R20716_Druckschlauchtülle_d50_KS_d52_ST_2_10"
-          geometry={nodes.R20716_Druckschlauchtülle_d50_KS_d52_ST_2_10.geometry}
-          material={materials.lambert1}
-          position={[5.99, 24.03, -13.08]}
-        />
-        <mesh
-          name="R20716_Druckschlauchtülle_d50_KS_d52_ST_2_7001"
-          geometry={
-            nodes.R20716_Druckschlauchtülle_d50_KS_d52_ST_2_7001.geometry
-          }
-          material={materials.lambert1}
-          position={[6.56, 25.28, -7.14]}
-        />
-        <mesh
-          name="polySurface7"
-          geometry={nodes.polySurface7.geometry}
-          material={materials.lambert1}
-          position={[-4.19, -61.81, -46.23]}
-        />
-        <mesh
-          name="R07285_Reduktion_125_90_PE100_SDR11_1_1_1_1001"
-          geometry={
-            nodes.R07285_Reduktion_125_90_PE100_SDR11_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.14, -75.45, -42.96]}
-        />
-        <mesh
-          name="R07389_Bund_DN100_d125_PN16_PE100_2_1_1_1_1001"
-          geometry={
-            nodes.R07389_Bund_DN100_d125_PN16_PE100_2_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.14, -74.6, -42.08]}
-        />
-        <mesh
-          name="R07475_Rohr_d90x5_4_PN10_PE100_2_1_1_2_1001"
-          geometry={nodes.R07475_Rohr_d90x5_4_PN10_PE100_2_1_1_2_1001.geometry}
-          material={materials.lambert1}
-          position={[-4.13, -75.45, -48.46]}
+          position={[7.85, 13.55, -9.35]}
         />
         <mesh
           name="Fundament_2_1_remesh1"
@@ -2543,77 +1330,18 @@ export default function Model(props) {
           position={[-4.3, -61.73, -1.49]}
         />
         <mesh
+          name="polySurface17"
+          geometry={nodes.polySurface17.geometry}
+          material={materials.barre}
+          position={[-4.19, -61.81, -47.3]}
+        />
+        <mesh
           name="R07475_Rohr_d90x5_4_PN10_PE100_2_1_1_2_1_1001"
           geometry={
             nodes.R07475_Rohr_d90x5_4_PN10_PE100_2_1_1_2_1_1001.geometry
           }
-          material={materials.lambert1}
+          material={materials.barre}
           position={[-4.08, -78.27, -54.49]}
-        />
-        <mesh
-          name="polySurface1"
-          geometry={nodes.polySurface1.geometry}
-          material={materials.lambert1}
-          position={[-4.15, -73.18, -42.09]}
-        />
-        <mesh
-          name="Rohrbogen_DIN_EN_ISO_15494_90_122_125x7_1_1_1_1_1_1_1_1_1001"
-          geometry={
-            nodes.Rohrbogen_DIN_EN_ISO_15494_90_122_125x7_1_1_1_1_1_1_1_1_1001
-              .geometry
-          }
-          material={materials.lambert1}
-          position={[-4.14, -75.21, -42.32]}
-        />
-        <mesh
-          name="Rohrbogen_DIN_EN_ISO_15494_90_87_90x5_1_1_1_1_1001"
-          geometry={
-            nodes.Rohrbogen_DIN_EN_ISO_15494_90_87_90x5_1_1_1_1_1001.geometry
-          }
-          material={materials.lambert1}
-          position={[-4.09, -75.62, -54.32]}
-        />
-        <mesh
-          name="polySurface17"
-          geometry={nodes.polySurface17.geometry}
-          material={materials.lambert1}
-          position={[-4.19, -61.81, -47.3]}
-        />
-        <mesh
-          name="ST_6KT_MUTTER_M16_PRT_1__2001"
-          geometry={nodes.ST_6KT_MUTTER_M16_PRT_1__2001.geometry}
-          material={materials.lambert1}
-          position={[-4.49, -54.45, -44.56]}
-        />
-        <mesh
-          name="polySurface6"
-          geometry={nodes.polySurface6.geometry}
-          material={materials.lambert1}
-          position={[-4.12, -74.4, -42.08]}
-        />
-        <mesh
-          name="ST_6KT_MUTTER_M16_PRT_1__4001"
-          geometry={nodes.ST_6KT_MUTTER_M16_PRT_1__4001.geometry}
-          material={materials.lambert1}
-          position={[-3.16, -54.53, -44.48]}
-        />
-        <mesh
-          name="polySurface16"
-          geometry={nodes.polySurface16.geometry}
-          material={materials.lambert1}
-          position={[-4.19, -61.81, -47.43]}
-        />
-        <mesh
-          name="polySurface5"
-          geometry={nodes.polySurface5.geometry}
-          material={materials.lambert1}
-          position={[-4.12, -74.62, -42.08]}
-        />
-        <mesh
-          name="ST_6KT_MUTTER_M16_PRT_1__3001"
-          geometry={nodes.ST_6KT_MUTTER_M16_PRT_1__3001.geometry}
-          material={materials.lambert1}
-          position={[-3.16, -54.52, -44.56]}
         />
         <mesh
           name="LASCHE_5X50X95_PRT_1__3001"
@@ -2622,16 +1350,46 @@ export default function Model(props) {
           position={[-3.16, -54.49, -44.51]}
         />
         <mesh
-          name="polySurface21"
-          geometry={nodes.polySurface21.geometry}
-          material={materials.lambert1}
-          position={[-4.26, -61.74, -20.81]}
-        />
-        <mesh
           name="polySurface23"
           geometry={nodes.polySurface23.geometry}
           material={materials.lambert1}
           position={[-17.91, -62.11, -3.22]}
+        />
+        <mesh
+          name="Cuve_secondaire"
+          geometry={nodes.Cuve_secondaire.geometry}
+          material={materials.cuve}
+          position={[-4.26, -61.74, -20.81]}
+        />
+        <mesh
+          name="polySurface16"
+          geometry={nodes.polySurface16.geometry}
+          material={materials.barre}
+          position={[-4.19, -61.81, -47.43]}
+        />
+        <mesh
+          name="polySurface7"
+          geometry={nodes.polySurface7.geometry}
+          material={materials.barre}
+          position={[-4.19, -61.81, -46.23]}
+        />
+        <mesh
+          name="ST_6KT_MUTTER_M16_PRT_1__2001"
+          geometry={nodes.ST_6KT_MUTTER_M16_PRT_1__2001.geometry}
+          material={materials.lambert1}
+          position={[-4.49, -54.45, -44.56]}
+        />
+        <mesh
+          name="ST_6KT_MUTTER_M16_PRT_1__3001"
+          geometry={nodes.ST_6KT_MUTTER_M16_PRT_1__3001.geometry}
+          material={materials.lambert1}
+          position={[-3.16, -54.52, -44.56]}
+        />
+        <mesh
+          name="ST_6KT_MUTTER_M16_PRT_1__4001"
+          geometry={nodes.ST_6KT_MUTTER_M16_PRT_1__4001.geometry}
+          material={materials.lambert1}
+          position={[-3.16, -54.53, -44.48]}
         />
         <mesh
           name="polySurface24"
@@ -2650,7 +1408,7 @@ export default function Model(props) {
         <mesh
           name="Walls_1"
           geometry={nodes.Walls_1.geometry}
-          material={materials.Wall}
+          material={materials.lambert1}
         />
         <mesh
           name="Walls_2"
@@ -2669,7 +1427,8 @@ export default function Model(props) {
         position={[-13.16, 3.18, -39.32]}
         rotation={[Math.PI, -1.57, Math.PI]}
       />
-      <group name="Toit" position={[43.34, 76.95, 0.89]}>
+
+<group name="Toit" position={[43.34, 76.95, 0.89]}>
           <ObjectInstance 
           name="Toit_contour"
           Positions={toitValeurs}
@@ -2681,6 +1440,7 @@ export default function Model(props) {
           object={nodes.Toit_2}
           />
         </group>
+        
       <mesh
         name="P02743-Z014-A_DN100_RG_E111_1"
         geometry={nodes["P02743-Z014-A_DN100_RG_E111_1"].geometry}
