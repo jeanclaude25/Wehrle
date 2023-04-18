@@ -113,10 +113,10 @@ export default function Experience()
                     environment="forest">
 
             <Model/>
-            <Wehrle_text props={goToThis}/>
+            {/* <Wehrle_text props={goToThis}/> */}
             </Stage>
 
-            <WaterOb base={0}/>
+            {/* <WaterOb base={0}/> */}
         </Suspense>
         
 
