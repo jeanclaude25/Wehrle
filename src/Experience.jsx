@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { OrbitControls, Stage} from '@react-three/drei'
+import { AccumulativeShadows, OrbitControls, RandomizedLight, Stage} from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { Perf } from 'r3f-perf'
 import { Suspense, useEffect, useRef, useState } from 'react'
@@ -100,6 +100,13 @@ export default function Experience()
         <color args={ [ '#fff' ] } attach="background" />
 
         <OrbitControls ref={orbitRef} makeDefault regress/>
+        {/* <AccumulativeShadows
+        temporal
+        frames={10}
+        scale={600}
+        >
+            <RandomizedLight amount={8} position={[5, 5, -10]}/>
+        </AccumulativeShadows> */}
 
         {/* <directionalLight castShadow position={ [ 0, 10, 0 ] } intensity={ 10.5 } shadow-normalBias={ 0.04 } /> */}
         {/* <ambientLight intensity={ 0.5 } /> */}
@@ -110,7 +117,7 @@ export default function Experience()
             <Stage 
                     adjustCamera = {false}
                     intensity = {0.4}
-                    shadows = {false}
+                    shadows = "accumulative"
                     preset = 'portrait'
                     environment="forest">
 
