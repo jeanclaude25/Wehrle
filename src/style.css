@@ -32,6 +32,13 @@ body,
     bottom: 0;
 }
 
+.logo_wehrle{
+    position: absolute;
+    z-index: 1500;
+    top: 50px;
+    right: 50px;
+}
+
 .html3dText img, .return_button{
     width: 50px;
     user-drag: none;  

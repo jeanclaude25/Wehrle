@@ -29,6 +29,9 @@ root.render(
     >
         <Experience />
     </Canvas>
+    <img
+    className='logo_wehrle'
+    alt='logo_wehrle' src='./img/logo.png'/>
 
     <img
     className='return_button'

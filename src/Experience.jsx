@@ -11,6 +11,7 @@ import Wehrle_text from './Wehrle_text.jsx'
 import { useControls } from "leva";
 import WaterOb from './shaderMaterials/WaterOb.js'
 import Watch from './Watch.js'
+import { debug_line } from './store.js'
 
 
 export default function Experience()
@@ -92,7 +93,8 @@ export default function Experience()
     }
 
     return <>
-
+        {/* {window.location.href.includes(debug_line)?<Leva/>:<Leva/>} */}
+       
         <Perf position="top-left" />
 
         <color args={ [ '#fff' ] } attach="background" />
@@ -113,12 +115,12 @@ export default function Experience()
                     environment="forest">
 
             <Model/>
+            
             {/* <Wehrle_text props={goToThis}/> */}
             </Stage>
 
             {/* <WaterOb base={0}/> */}
         </Suspense>
-        
 
         {/* <Effects /> */}
     </>
