@@ -1,6 +1,6 @@
 import { useDepthBuffer } from '@react-three/drei'
 import { SMAA, EffectComposer, Bloom, Vignette, Noise, SSAO, Depth, DepthOfField } from '@react-three/postprocessing'
-import { isMobile } from './store'
+import { isMobile } from './store/store'
 import { BlendFunction } from 'postprocessing'
 // import { useControls } from 'leva'
 

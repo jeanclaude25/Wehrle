@@ -2,7 +2,7 @@ import './style.css'
 import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.jsx'
-import { isMobile } from './store'
+import { isMobile } from './store/store'
 import { OrbitControls} from '@react-three/drei'
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
