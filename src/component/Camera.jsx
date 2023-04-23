@@ -196,7 +196,7 @@ export default function Camera() {
       ) : (
         <></>
       )}
-        <MouseMove props={orbitRef}/>
+        <MouseMove orbitRef={orbitRef} allow={true}/>
         <OrbitControls enableZoom={false} ref={orbitRef} makeDefault regress/>
     </>
     )
