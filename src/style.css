@@ -2,6 +2,10 @@
     font-family: gibson;
     src: url(../public/fonts/Font_Gibson/GibsonRegular.OTF);
   }
+@font-face {
+    font-family: gibsonBold;
+    src: url(../public/fonts/Font_Gibson/GibsonBold.OTF);
+  }
 
 html,
 body,
@@ -47,7 +51,6 @@ body,
 }
 
 .IntroTitle{
-    font-family: gibson;
     position: absolute;
     z-index: 1500;
     top: 100px;
@@ -55,10 +58,16 @@ body,
     color: #22a8c0;
     cursor: default;
 }
+.mbrIndustry {
+    font-family: gibsonBold;
+}
+
+.biomembrat {
+    font-family: gibson;
+}
 
 .html3dText img, .return_button{
     width: 50px;
-
    transition: all 0.1s;
 }
 

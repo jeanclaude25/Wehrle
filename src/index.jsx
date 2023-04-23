@@ -34,11 +34,11 @@ root.render(
     alt='logo_wehrle' src='./img/logo.png'
     draggable='false'/>
 
-    <h1
-    className='IntroTitle'>
-        MBR INDUSTRY - <br/>
-        BIOMEMBRAT FOR INDUSTRIES
-    </h1>
+<h1 className='IntroTitle'>
+    <span className='mbrIndustry'>MBR INDUSTRY</span> - <br/>
+    <span className='biomembrat'>BIOMEMBRAT FOR INDUSTRIES</span>
+</h1>
+
 
     {/* <img
     className='return_button'
