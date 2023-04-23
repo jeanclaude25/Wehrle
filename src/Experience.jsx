@@ -7,7 +7,7 @@ import { Suspense, useEffect, useRef, useState } from 'react'
 import Effects from './Effects.jsx'
 // import Model from './Wehrle_cuve.jsx'
 import Model from './component/Wehrle_cuve_retopo.jsx'
-import Wehrle_text from './Wehrle_text.jsx'
+import Wehrle_text from './component/Wehlre_text.jsx'
 import { useControls } from "leva";
 import WaterOb from './shaderMaterials/WaterOb.js'
 import Watch from './Watch.js'
@@ -105,7 +105,6 @@ export default function Experience()
                     environment="forest"> */}
 
             <Model/>
-            
             {/* <Wehrle_text props={goToThis}/> */}
 
             {/* <WaterOb base={0}/> */}
