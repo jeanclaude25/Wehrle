@@ -12,28 +12,15 @@ export default function Wehrle_text (props){
     return(
         <>
         
-
-        <Html
-        
-        position={[18.19, 23.21, 89.65]}
-        wrapperClass="html3dText"
-        distanceFactor={distanceFactor}
-        center>
-            <img
-            onClick={() => click("benefitsWehrle")}
-            alt='plus' src='./img/Button_grau.png'/>
-            All benefits at a glance
-        </Html>
-
         <Html
         position={[-54.85, 7.54, 7.3]}
         wrapperClass="html3dText"
         distanceFactor={distanceFactor}
         center>
             <img
-            onClick={() => click("exploreWehrle")}
+            onClick={() => click("EasyUpgrade")}
             alt='plus' src='./img/Button_grau.png'/>
-            Explore WEHRLE's adaptive process
+            Easy upgrade to water re-use
         </Html>
 
         <Html
@@ -42,9 +29,9 @@ export default function Wehrle_text (props){
         distanceFactor={distanceFactor}
         center>
             <img
-            onClick={() => click("intelligentWehrle")}
+            onClick={() => click("SmartAdaptive")}
             alt='plus' src='./img/Button_grau.png'/>
-            Intelligent modular plant design
+            Smart adaptive process
         </Html>
 
         <Html
@@ -53,9 +40,9 @@ export default function Wehrle_text (props){
         distanceFactor={distanceFactor}
         center>
             <img
-            onClick={() => click("easyWehrle")}
+            onClick={() => click("MembraneBio")}
             alt='plus' src='./img/Button_grau.png'/>
-            Easy to upgrade to water re-use
+            Membrane Bioreactor
         </Html>
 
         <Html
@@ -69,17 +56,6 @@ export default function Wehrle_text (props){
             Friendly remote handling
         </Html>
 
-        {/* <Text
-      position={[24.23, 44.62, 100.45]}
-      rotation={[0,-Math.PI/2,0]}
-      scale={[generalScale,generalScale,generalScale]}
-      maxWidth={maxWidth}
-            textAlign="center"
-      font="./fonts/Font_Gibson/GibsonRegular.OTF"
-      color={textColor}
-      >
-        Friendly remote handling
-        </Text> */}
 </>
     )
 }

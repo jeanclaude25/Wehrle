@@ -22,9 +22,11 @@ export default function Camera() {
 
     const scrollStepValue = 3;
     const objectPositions = [
-        { cameraPosition: new THREE.Vector3(0, 0, 10), cameraTarget: new THREE.Vector3(0, 0, 0) },
-        { cameraPosition: new THREE.Vector3(10, 0, 10), cameraTarget: new THREE.Vector3(10, 0, 0) },
-        { cameraPosition: new THREE.Vector3(20, 0, 10), cameraTarget: new THREE.Vector3(20, 0, 0) },
+        { cameraPosition: new THREE.Vector3(0, 0, 10), cameraTarget: new THREE.Vector3(-54.85, 7.54, 7.3) },
+        { cameraPosition: new THREE.Vector3(10, 0, 10), cameraTarget: new THREE.Vector3(-41.19, 7.54, 44.87) },
+        { cameraPosition: new THREE.Vector3(20, 0, 10), cameraTarget: new THREE.Vector3(-0.46, 7.54, 58.54) },
+        { cameraPosition: new THREE.Vector3(20, 0, 10), cameraTarget: new THREE.Vector3(24.23, 44.62, 100.45) },
+
         // Ajoutez autant d'objets que nécessaire
       ];
 

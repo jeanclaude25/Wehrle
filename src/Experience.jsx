@@ -47,7 +47,9 @@ export default function Experience()
     //     setFriendlyWehrle(false)
     // }
 
-
+    const goToThis = (e) => {
+        console.log("execute " + e)
+    }
     // const goToThis = (e) => {
     //     console.log("go to this " + e)
     //     resetAllView()
@@ -97,15 +99,9 @@ export default function Experience()
 
         <Suspense fallback={<></>}>
             <Lights/>
-            {/* <Stage 
-                    adjustCamera = {false}
-                    intensity = {0.4}
-                    shadows = "accumulative"
-                    preset = 'portrait'
-                    environment="forest"> */}
 
             <Model/>
-            {/* <Wehrle_text props={goToThis}/> */}
+            <Wehrle_text props={goToThis}/>
 
             {/* <WaterOb base={0}/> */}
         </Suspense>
