@@ -33,10 +33,10 @@ root.render(
     className='logo_wehrle'
     alt='logo_wehrle' src='./img/logo.png'/>
 
-    <img
+    {/* <img
     className='return_button'
     onClick={() => click("benefitsWehrle")}
-    alt='plus' src='./img/Button_grau_minus.png'/>
+    alt='plus' src='./img/Button_grau_minus.png'/> */}
 
     </>
 )
