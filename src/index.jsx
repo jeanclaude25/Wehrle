@@ -31,7 +31,14 @@ root.render(
     </Canvas>
     <img
     className='logo_wehrle'
-    alt='logo_wehrle' src='./img/logo.png'/>
+    alt='logo_wehrle' src='./img/logo.png'
+    draggable='false'/>
+
+    <h1
+    className='IntroTitle'>
+        MBR INDUSTRY - <br/>
+        BIOMEMBRAT FOR INDUSTRIES
+    </h1>
 
     {/* <img
     className='return_button'
