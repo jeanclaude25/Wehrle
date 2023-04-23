@@ -15,6 +15,7 @@ export default function Camera() {
     const transferObjectRef = useRef();
     const snap = useSnapshot(cameraState);
     const [targetCameraPosition, setTargetCameraPosition] = useState(new THREE.Vector3(snap.cameraPosition[0], snap.cameraPosition[1], snap.cameraPosition[2]));
+    const [mousePressed, setMousePressed] = useState(false);
 
     const [scrollCount, setScrollCount] = useState(0);
     const [objectIndex, setObjectIndex] = useState(0);
@@ -43,17 +44,26 @@ export default function Camera() {
                 onChange: (value) => cameraState.cameraTarget[2] = value,
                 },
 
-                positionX: {
+        positionX: {
                     value: snap.cameraPosition[0], min: -1000, max: 1000, step: 0.01,
-                    onChange: (value) => cameraState.cameraPosition[0] = value,
+                    onChange: (value) => {
+                      cameraState.cameraPosition[0] = value;
+                      cameraState.cameraInitialPosition[0] = value;
+                      },
                     },
-            positionY: {
+        positionY: {
                     value: snap.cameraPosition[1], min: -1000, max: 1000, step: 0.01,
-                    onChange: (value) => cameraState.cameraPosition[1] = value,
+                    onChange: (value) => {
+                      cameraState.cameraPosition[1] = value;
+                      cameraState.cameraInitialPosition[1] = value;
+                    }
                     },
-            positionZ: {
+        positionZ: {
                     value: snap.cameraPosition[2], min: -1000, max: 1000, step: 0.01,
-                    onChange: (value) => cameraState.cameraPosition[2] = value,
+                    onChange: (value) => {
+                      cameraState.cameraPosition[2] = value;
+                      cameraState.cameraInitialPosition[2] = value;
+                    }
                     }
       });
 
@@ -101,7 +111,24 @@ export default function Camera() {
         };
       };
 
-
+      useEffect(() => {
+        const handleMouseDown = () => {
+          setMousePressed(true);
+        };
+      
+        const handleMouseUp = () => {
+          setMousePressed(false);
+        };
+      
+        window.addEventListener("mousedown", handleMouseDown);
+        window.addEventListener("mouseup", handleMouseUp);
+      
+        return () => {
+          window.removeEventListener("mousedown", handleMouseDown);
+          window.removeEventListener("mouseup", handleMouseUp);
+        };
+      }, []);
+      
       useEffect(() => {
         const camera = orbitRef.current.object;
         camera.position.set(snap.cameraPosition[0], snap.cameraPosition[1], snap.cameraPosition[2]);
@@ -162,7 +189,7 @@ export default function Camera() {
               cameraSpring.position.get()[1],
               cameraSpring.position.get()[2]
             ),
-            0.1
+            0.03
           );
 
         }
@@ -196,8 +223,8 @@ export default function Camera() {
       ) : (
         <></>
       )}
-        <MouseMove orbitRef={orbitRef} allow={true}/>
-        <OrbitControls enableZoom={false} ref={orbitRef} makeDefault regress/>
+        <MouseMove orbitRef={orbitRef} allow={!mousePressed}/>
+        <OrbitControls enableZoom={false} enableRotate={!mousePressed} enablePan={!mousePressed} ref={orbitRef} makeDefault regress/>
     </>
     )
 }
