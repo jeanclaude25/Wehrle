@@ -191,7 +191,7 @@ export default function Camera() {
               cameraSpring.position.get()[1],
               cameraSpring.position.get()[2]
             ),
-            0.03
+            0.6
           );
 
         }

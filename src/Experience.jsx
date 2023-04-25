@@ -8,16 +8,19 @@ import Effects from './Effects.jsx'
 // import Model from './Wehrle_cuve.jsx'
 import Model from './component/Wehrle_cuve_retopo.jsx'
 import Wehrle_text from './component/Wehlre_text.jsx'
-import { useControls } from "leva";
 import WaterOb from './shaderMaterials/WaterOb.js'
 import Watch from './Watch.js'
 import { debug_line } from './store/store.js'
 import Camera from './component/Camera.jsx'
 import { Lights } from './component/Lights.jsx'
+import { useSnapshot } from "valtio";
+import { cameraState } from './store/index.js'
+import Debug from './component/Debug.jsx'
 
 
 export default function Experience()
 {
+    const snap = useSnapshot(cameraState);
     // const orbitRef = useRef();
 
     // const [exploreWehrle, setExploreWehrle] = useState(false);
@@ -47,8 +50,29 @@ export default function Experience()
     //     setFriendlyWehrle(false)
     // }
 
+    
+    const moveCameraTo = (position, target) => {
+        // const newPosition = new THREE.Vector3(position[0],position[1],position[2])
+        // const newTarget = new THREE.Vector3(target[0],target[1],target[2])
+        cameraState.cameraPosition = position
+        cameraState.cameraInitialPosition = position
+        cameraState.cameraTarget = target
+
+    }
+
+    const video = (value) => {
+        console.log("start video "+ value)
+    }
+
     const goToThis = (e) => {
         console.log("execute " + e)
+        switch(e){
+            case "MembraneBio": moveCameraTo(cameraState.pageData.page_4.cameraPosition, cameraState.pageData.page_4.cameraTarget)
+                break;
+            default: video(e);
+            break;
+            
+        }
     }
     // const goToThis = (e) => {
     //     console.log("go to this " + e)
@@ -107,5 +131,6 @@ export default function Experience()
         </Suspense>
 
         {/* <Effects /> */}
+        <Debug/>
     </>
 }
