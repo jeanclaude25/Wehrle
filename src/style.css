@@ -26,6 +26,11 @@ body,
     -ms-user-select: none;
 }
 
+.canvas{
+    opacity: 0;
+    animation: fadeIn 10s forwards;
+}
+
 .html3dText{
     text-align: center;
     font-family: gibson;
@@ -48,6 +53,7 @@ body,
     top: 50px;
     right: 100px;
     width: 120px;
+    animation: fadeIn 4s forwards;
 }
 
 .introLogo {
@@ -59,6 +65,8 @@ body,
     align-items: center;
     z-index: 9999;
     background-color: #FFF;
+    opacity: 0;
+    animation: fadeInOut 4s forwards;
   }
 
 .IntroTitle{
@@ -68,6 +76,7 @@ body,
     left: 100px;
     color: #22a8c0;
     cursor: default;
+    animation: fadeIn 4s forwards;
 }
 .mbrIndustry {
     font-family: gibsonBold;
@@ -90,3 +99,26 @@ body,
     transition: none;
     width: 49px;
 }
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

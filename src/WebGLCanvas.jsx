@@ -16,11 +16,23 @@ import { Lights } from './component/Lights.jsx'
 import { useSnapshot } from "valtio";
 import { cameraState } from './store/index.js'
 import Debug from './component/Debug.jsx'
+import Container from './component/Container.jsx'
+
 
 
 export default function WebGLCanvas()
 {
     const snap = useSnapshot(cameraState);
+    const [startCloseCam, setStartCloseCam] = useState(false)
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setStartCloseCam(true)
+        }, 8000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     // const orbitRef = useRef();
 
     // const [exploreWehrle, setExploreWehrle] = useState(false);
@@ -120,14 +132,16 @@ export default function WebGLCanvas()
 
         <Camera/>
 
+        
 
         <Suspense fallback={<></>}>
+        <Container props={startCloseCam}/>
             <Lights/>
-
             <Model/>
             <Wehrle_text props={goToThis}/>
 
             {/* <WaterOb base={0}/> */}
+            
         </Suspense>
 
         {/* <Effects /> */}
