@@ -10,11 +10,10 @@ import { useSnapshot } from "valtio";
 import { useSpring, animated } from "@react-spring/three";
 import MouseMove from './MouseMove';
 
-export default function Camera() {
+export default function Camera(props) {
     const orbitRef = useRef();
     const transferObjectRef = useRef();
     const snap = useSnapshot(cameraState);
-    const [targetCameraPosition, setTargetCameraPosition] = useState(new THREE.Vector3(snap.cameraPosition[0], snap.cameraPosition[1], snap.cameraPosition[2]));
     const [mousePressed, setMousePressed] = useState(false);
 
     const [scrollCount, setScrollCount] = useState(0);
@@ -69,40 +68,6 @@ export default function Camera() {
                     }
       });
 
-      const cameraSpring = useSpring({
-        target: [
-          snap.cameraTarget[0],
-          snap.cameraTarget[1],
-          snap.cameraTarget[2],
-        ],
-        position: [
-            snap.cameraPosition[0],
-            snap.cameraPosition[1],
-            snap.cameraPosition[2],
-          ],
-        config: { tension: 150, friction: 20 },
-      });
-
-
-      function moveCamera(delta) {
-        const camera = orbitRef.current.object;
-        const direction = new THREE.Vector3();
-        camera.getWorldDirection(direction);
-      
-        const newPosition = camera.position.clone().add(direction.multiplyScalar(delta));
-        const newTarget = orbitRef.current.target.clone().add(direction.multiplyScalar(delta));
-      
-        camera.position.copy(newPosition);
-        orbitRef.current.target.copy(newTarget);
-      
-        cameraState.cameraTarget = [
-          newTarget.x,
-          newTarget.y,
-          newTarget.z,
-        ];
-        console.log(camera.position)
-      }
-
       
 
       const handleTargetChange = () => {
@@ -130,11 +95,6 @@ export default function Camera() {
           window.removeEventListener("mouseup", handleMouseUp);
         };
       }, []);
-      
-      useEffect(() => {
-        const camera = orbitRef.current.object;
-        camera.position.set(snap.cameraPosition[0], snap.cameraPosition[1], snap.cameraPosition[2]);
-      }, [snap.cameraPosition]);
 
       
       useEffect(() => {
@@ -159,7 +119,6 @@ export default function Camera() {
                     prev + 1 < objectPositions.length ? prev + 1 : prev:
                     prev > 0 ? prev - 1 : prev;
                 
-                setTargetCameraPosition(objectPositions[newIndex].cameraPosition);
                 cameraState.cameraTarget = objectPositions[newIndex].cameraTarget.toArray();
                 return newIndex;
                 });
@@ -174,8 +133,25 @@ export default function Camera() {
       }, [scrollCount]);
       
 
+      const cameraSpring = useSpring({
+        target: [
+          snap.cameraTarget[0],
+          snap.cameraTarget[1],
+          snap.cameraTarget[2],
+        ],
+        position: [
+            snap.cameraPosition[0],
+            snap.cameraPosition[1],
+            snap.cameraPosition[2],
+          ],
+        config: { tension: 150, friction: 20, duration:3000},
+      });
+
+      
+
       useFrame(() => {
         if (orbitRef.current) {
+          
           orbitRef.current.target.lerp(
             new THREE.Vector3(
               cameraSpring.target.get()[0],
@@ -191,8 +167,10 @@ export default function Camera() {
               cameraSpring.position.get()[1],
               cameraSpring.position.get()[2]
             ),
-            0.6
+            0.1
           );
+
+        }else{
 
         }
       });
@@ -225,7 +203,7 @@ export default function Camera() {
       ) : (
         <></>
       )}
-        <MouseMove orbitRef={orbitRef} allow={!mousePressed}/>
+        {/* <MouseMove orbitRef={orbitRef} allow={!mousePressed}/> */}
         <OrbitControls enableZoom={false} enableRotate={!mousePressed} enablePan={!mousePressed} ref={orbitRef} makeDefault regress/>
     </>
     )

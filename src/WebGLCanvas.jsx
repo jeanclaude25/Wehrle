@@ -22,12 +22,13 @@ import Container from './component/Container.jsx'
 
 export default function WebGLCanvas()
 {
-    const snap = useSnapshot(cameraState);
+    const cameraSnap = useSnapshot(cameraState);
     const [startCloseCam, setStartCloseCam] = useState(false)
 
     useEffect(() => {
         const timer = setTimeout(() => {
             setStartCloseCam(true)
+            moveCameraTo(cameraState.pageData.page_1.cameraPosition, cameraState.pageData.page_1.cameraTarget)
         }, 8000);
 
         return () => clearTimeout(timer);
@@ -64,12 +65,10 @@ export default function WebGLCanvas()
 
     
     const moveCameraTo = (position, target) => {
-        // const newPosition = new THREE.Vector3(position[0],position[1],position[2])
-        // const newTarget = new THREE.Vector3(target[0],target[1],target[2])
+        console.log("move camera")
         cameraState.cameraPosition = position
         cameraState.cameraInitialPosition = position
         cameraState.cameraTarget = target
-
     }
 
     const video = (value) => {
@@ -130,7 +129,7 @@ export default function WebGLCanvas()
 
         <color args={ [ '#fff' ] } attach="background" />
 
-        <Camera/>
+        <Camera cameraState={cameraSnap}/>
 
         
 

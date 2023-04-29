@@ -18,6 +18,7 @@ export default function Wehrle_text (props){
         distanceFactor={distanceFactor}
         center>
             <img
+            draggable={false}
             onClick={() => click("EasyUpgrade")}
             alt='plus' src='./img/Button_grau.png'/>
             Easy upgrade to water re-use
@@ -29,6 +30,7 @@ export default function Wehrle_text (props){
         distanceFactor={distanceFactor}
         center>
             <img
+            draggable={false}
             onClick={() => click("SmartAdaptive")}
             alt='plus' src='./img/Button_grau.png'/>
             Smart adaptive process
@@ -40,6 +42,7 @@ export default function Wehrle_text (props){
         distanceFactor={distanceFactor}
         center>
             <img
+            draggable={false}
             onClick={() => click("MembraneBio")}
             alt='plus' src='./img/Button_grau.png'/>
             Membrane Bioreactor
@@ -51,6 +54,7 @@ export default function Wehrle_text (props){
         distanceFactor={distanceFactor}
         center>
             <img
+            draggable={false}
             onClick={() => click("friendlyWehrle")}
             alt='plus' src='./img/Button_grau.png'/>
             Friendly remote handling
