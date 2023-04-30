@@ -9,6 +9,7 @@ import { useFrame } from "@react-three/fiber";
 import { useSnapshot } from "valtio";
 import { useSpring, animated } from "@react-spring/three";
 import MouseMove from './MouseMove';
+import { useSpringRef } from 'react-spring';
 
 export default function Camera(props) {
     const orbitRef = useRef();
@@ -18,6 +19,8 @@ export default function Camera(props) {
 
     const [scrollCount, setScrollCount] = useState(0);
     const [objectIndex, setObjectIndex] = useState(0);
+  // const springRef = useSpringRef()
+    
 
     const scrollStepValue = 3;
     const objectPositions = [
@@ -132,8 +135,9 @@ export default function Camera(props) {
         };
       }, [scrollCount]);
       
-
+//00000000000000000000000000000000000000000000000000000
       const cameraSpring = useSpring({
+        // ref: springRef,
         target: [
           snap.cameraTarget[0],
           snap.cameraTarget[1],
@@ -144,7 +148,7 @@ export default function Camera(props) {
             snap.cameraPosition[1],
             snap.cameraPosition[2],
           ],
-        config: { tension: 150, friction: 20, duration:3000},
+        config: { tension: 150, friction: 20, duration:1000},
       });
 
       
@@ -170,10 +174,10 @@ export default function Camera(props) {
             0.1
           );
 
-        }else{
-
         }
       });
+
+//000000000000000000000000000000000000000000000000000000000000000
 
     return(
     <>

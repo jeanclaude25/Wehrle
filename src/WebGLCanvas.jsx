@@ -69,6 +69,7 @@ export default function WebGLCanvas()
         cameraState.cameraPosition = position
         cameraState.cameraInitialPosition = position
         cameraState.cameraTarget = target
+
     }
 
     const video = (value) => {
@@ -129,7 +130,7 @@ export default function WebGLCanvas()
 
         <color args={ [ '#fff' ] } attach="background" />
 
-        <Camera cameraState={cameraSnap}/>
+        <Camera />
 
         
 
