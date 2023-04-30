@@ -17,6 +17,7 @@ import { useSnapshot } from "valtio";
 import { cameraState } from './store/index.js'
 import Debug from './component/Debug.jsx'
 import Container from './component/Container.jsx'
+import VideoPlane from './component/VideoPlane.jsx'
 
 
 
@@ -143,6 +144,8 @@ export default function WebGLCanvas()
             {/* <WaterOb base={0}/> */}
             
         </Suspense>
+        
+        <VideoPlane url="/path/to/your/video.mp4" width={4} height={3} />
 
         {/* <Effects /> */}
         <Debug/>
