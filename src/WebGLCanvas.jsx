@@ -146,7 +146,6 @@ export default function WebGLCanvas()
             
         </Suspense>
         
-        <VideoPlane url="/path/to/your/video.mp4" width={4} height={3} />
 
         {/* <Effects /> */}
         <Debug/>

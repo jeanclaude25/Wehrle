@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import { PlaneGeometry, VideoTexture } from "three";
+import * as THREE from 'three'
 
 
-export default function VideoPlane({ url, width, height }) {
+export default function VideoPlane({ url, width, height, pos }) {
     const videoRef = useRef();
     const meshRef = useRef();
     const { gl } = useThree();
@@ -24,10 +25,13 @@ export default function VideoPlane({ url, width, height }) {
   
     return (
       <>
-        <mesh ref={meshRef} scale={[width, height, 1]}>
-          <planeGeometry args={[1, 1]} />
+        <mesh ref={meshRef} scale={[width, height, 1]} position={pos} rotation={[0,-Math.PI/2,0]}>
+          <planeGeometry args={[1, 1]} lookAt={[-626.72, 166.3, 186.1]}/>
+          {/* <boxGeometry /> */}
+          <meshBasicMaterial transparent={true} opacity={1}/>
           {/* {videoTexture && <meshBasicMaterial map={videoTexture} />} */}
         </mesh>
+        
       </>
     );
   }
