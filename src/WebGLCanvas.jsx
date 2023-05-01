@@ -30,7 +30,7 @@ export default function WebGLCanvas()
         const timer = setTimeout(() => {
             setStartCloseCam(true)
             moveCameraTo(cameraState.pageData.page_1.cameraPosition, cameraState.pageData.page_1.cameraTarget)
-        }, 8000);
+        }, 15000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -139,7 +139,8 @@ export default function WebGLCanvas()
         <Container props={startCloseCam}/>
             <Lights/>
             <Model/>
-            <Wehrle_text props={goToThis}/>
+            {startCloseCam?(<Wehrle_text props={goToThis}/>):<></>}
+            
 
             {/* <WaterOb base={0}/> */}
             

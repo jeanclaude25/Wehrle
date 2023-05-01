@@ -26,7 +26,7 @@ export default function VideoPlane({ url, width, height }) {
       <>
         <mesh ref={meshRef} scale={[width, height, 1]}>
           <planeGeometry args={[1, 1]} />
-          {videoTexture && <meshBasicMaterial map={videoTexture} />}
+          {/* {videoTexture && <meshBasicMaterial map={videoTexture} />} */}
         </mesh>
       </>
     );

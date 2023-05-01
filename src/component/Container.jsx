@@ -25,10 +25,12 @@ export default function Container(props) {
       }
 
   return (
-    <group position={[15.73, 11.41, 62.42]} rotation={[Math.PI / 2, 0, 0]}>
-      <mesh geometry={nodes.Mesh567.geometry} material={materials.lambert1}/>
-      <mesh geometry={nodes.Mesh567_1.geometry} material={materials.tole} />
-    </group>
+    <>
+    <mesh position={[15.73, 8.5, 62.42]} scale={[13, 15, 62]}>
+      <boxGeometry/>
+      <meshBasicMaterial transparent={true} opacity={1}/>
+    </mesh>
+    </>
   );
 }
 
