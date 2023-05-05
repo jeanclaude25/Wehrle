@@ -2,11 +2,13 @@ import { Canvas } from '@react-three/fiber'
 import WebGLCanvas from './WebGLCanvas'
 import { cameraState } from './store/index.js'
 import { useEffect, useState, StrictMode } from 'react';
+import { useRef } from 'react';
 
 export default function Experience()
 {
    
     const [showLogo, setShowLogo] = useState(true);
+    const videoRef = useRef();
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -34,7 +36,7 @@ export default function Experience()
         <span className='biomembrat'>BIOMEMBRAT FOR INDUSTRIES</span>
     </h1>
 
-    <video src={""} autoPlay loop muted style={{ display: "none" }} />
+    <video ref={videoRef} src={""} autoPlay loop muted style={{ display: "none" }} />
       </>
       }
 

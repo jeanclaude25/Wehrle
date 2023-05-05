@@ -2,7 +2,7 @@ import * as THREE from 'three'
 import { AccumulativeShadows, OrbitControls, RandomizedLight, Stage} from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { Perf } from 'r3f-perf'
-import { Suspense, useEffect, useRef, useState } from 'react'
+import { Suspense, useCallback, useEffect, useRef, useState } from 'react'
 // import Placeholder from './Placeholder.js'
 import Effects from './Effects.jsx'
 import Model from './component/Wehrle_cuve_retopo.jsx'
@@ -11,9 +11,10 @@ import WaterOb from './shaderMaterials/WaterOb.js'
 import Camera from './component/Camera.jsx'
 import { Lights } from './component/Lights.jsx'
 import { useSnapshot } from "valtio";
-import { cameraState } from './store/index.js'
+import { cameraState, useLocationHash } from './store/index.js'
 import Debug from './component/Debug.jsx'
 import Container from './component/Container.jsx'
+import { pageData } from './store/store.js'
 
 
 
@@ -22,14 +23,30 @@ export default function WebGLCanvas()
     const cameraSnap = useSnapshot(cameraState);
     const [startCloseCam, setStartCloseCam] = useState(false)
 
+    const moveCameraTo = useCallback((position, target) => {
+        console.log("move camera")
+        cameraState.cameraPosition = position
+        cameraState.cameraInitialPosition = position
+        cameraState.cameraTarget = target
+    },[cameraState])
+
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setStartCloseCam(true)
-            moveCameraTo(cameraState.pageData.page_1.cameraPosition, cameraState.pageData.page_1.cameraTarget)
-        }, 15000);
+            moveCameraTo(pageData.page_1.cameraPosition, pageData.page_1.cameraTarget)
+        }, 5000);
 
         return () => clearTimeout(timer);
-    }, []);
+    }, [moveCameraTo]);
+
+
+const hash = useLocationHash()
+console.log(hash)
+const state = { page_id: 1, user_id: 5 };
+const url = "hello-world.html";
+
+history.pushState(state, "", url);
 
     // const orbitRef = useRef();
 
@@ -61,13 +78,11 @@ export default function WebGLCanvas()
     // }
 
     
-    const moveCameraTo = (position, target) => {
-        console.log("move camera")
-        cameraState.cameraPosition = position
-        cameraState.cameraInitialPosition = position
-        cameraState.cameraTarget = target
 
-    }
+
+    useEffect(()=>{
+        console.log("move changed")
+    },[moveCameraTo])
 
     const video = (value) => {
         console.log("start video "+ value)
@@ -76,7 +91,7 @@ export default function WebGLCanvas()
     const goToThis = (e) => {
         console.log("execute " + e)
         switch(e){
-            case "MembraneBio": moveCameraTo(cameraState.pageData.page_4.cameraPosition, cameraState.pageData.page_4.cameraTarget)
+            case "MembraneBio": moveCameraTo(pageData.page_4.cameraPosition, pageData.page_4.cameraTarget)
                 break;
             default: video(e);
             break;
@@ -132,7 +147,7 @@ export default function WebGLCanvas()
         
 
         <Suspense fallback={<></>}>
-        <Container props={startCloseCam}/>
+        <Container visible={startCloseCam}/>
             <Lights/>
             <Model/>
             {startCloseCam?(<Wehrle_text props={goToThis}/>):<></>}

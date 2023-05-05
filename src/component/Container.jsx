@@ -1,23 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useSpring, animated } from "@react-spring/three";
 
-
-export default function Container(props) {
+export default function Container({visible}) {
 
   const { nodes, materials } = useGLTF("./container.glb");
   const [shouldUnmount, setShouldUnmount] = useState(false);
 
   const { opacity } = useSpring({
-    opacity: props.props ? 0 : 1,
+    opacity: visible ? 0 : 1,
     config: { duration: 3000 },
     onRest: () => {
-      if (props.props) {
+      if (visible) {
         setShouldUnmount(true);
       }
     },
   });
-
 
 
     if (shouldUnmount) {
@@ -28,7 +26,7 @@ export default function Container(props) {
     <>
     <mesh position={[15.73, 8.5, 62.42]} scale={[13, 15, 62]}>
       <boxGeometry/>
-      <meshBasicMaterial transparent={true} opacity={1}/>
+      <animated.meshBasicMaterial transparent={true} opacity={opacity}/>
     </mesh>
     </>
   );
