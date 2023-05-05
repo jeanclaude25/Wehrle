@@ -33,7 +33,8 @@ export default function Experience()
         <span className='mbrIndustry'>MBR INDUSTRY</span> - <br/>
         <span className='biomembrat'>BIOMEMBRAT FOR INDUSTRIES</span>
     </h1>
-    {/* <video ref={videoRef} src={url} autoPlay loop muted style={{ display: "none" }} /> */}
+
+    <video src={""} autoPlay loop muted style={{ display: "none" }} />
       </>
       }
 
