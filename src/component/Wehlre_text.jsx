@@ -9,7 +9,7 @@ export default function Wehrle_text (props){
 
     const click = (e) => {
         // console.log(e)
-        props.props(e)
+        //props.props(e)
      }
 
     return(
@@ -77,7 +77,7 @@ export default function Wehrle_text (props){
         center>
             <img
             draggable={false}
-            onClick={() => click("heavyDuty")}
+            onClick={() => click("heavyDutyBiology")}
             alt='plus' src='./img/Button_grau.png'/>
             Heavy Duty Biology
         </Html>

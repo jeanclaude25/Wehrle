@@ -4,31 +4,58 @@ const data = Array.from({ length: 1000 }, (r = 10) => ({ random: Math.random(), 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 const debug_line = '?debug'
 
+
 const pageData = {
-    page_1:{
-      name: "intro",
+  Intro:{
+    hash: "#intro_wehrle.html",
+    name: "Intro",
+    cameraTarget: [0, 0, 0],
+    cameraPosition: [-300, 140, 100],
+  },
+  EasyUpgrade:{
+      hash: "#easy_upgrade_to_water_reuse.html",
+      name: "EasyUpgrade",
       cameraTarget: [0, 0, 0],
       cameraPosition: [-300, 140, 100],
-
     },
-    page_2:{
-      name: "Easy upgrade",
+  SmartAdaptive:{
+      hash: "#smart_adaptive_process.html",
+      name: "SmartAdaptive",
+      // cameraTarget: [0, 0, 0],
+      // cameraPosition: [-626.72, 166.3, 186.1],
+    },
+  friendlyWehrle:{
+      hash: "#friendly_remote_handling.html",
+      name: "friendlyWehrle",
       // cameraTarget: [0, 0, 0],
       // cameraPosition: [-626.72, 166.3, 186.1],
       
     },
-    page_3:{
-      name: "Adaptive process",
-      // cameraTarget: [0, 0, 0],
-      // cameraPosition: [-626.72, 166.3, 186.1],
-      
-    },
-    page_4:{
+  MembraneBio:{
+      hash: "#membrane_bioreactor.html",
       name: "Membrane Bioreactor",
       cameraTarget: [10, 8, 35],
       cameraPosition: [-10, 8, 70],
-      
-    }
+    },
+  heavyDutyBiology:{
+    hash: "#heavy_duty_biology.html",
+    name: "heavyDutyBiology",
+    cameraTarget: [10, 8, 35],
+    cameraPosition: [-10, 8, 70],
+  },
+  ultraFiltration:{
+    hash: "#ultra_filtration.html",
+    name: "ultra Filtration",
+    cameraTarget: [10, 8, 35],
+    cameraPosition: [-10, 8, 70],
+  },
+  cleaning:{
+    hash: "#cleaning.html",
+    name: "cleaning",
+    cameraTarget: [10, 8, 35],
+    cameraPosition: [-10, 8, 70],
+  },
+  
   }
 
 export { data, isMobile, debug_line, pageData }

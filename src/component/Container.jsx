@@ -8,10 +8,10 @@ export default function Container({visible}) {
   const [shouldUnmount, setShouldUnmount] = useState(false);
 
   const { opacity } = useSpring({
-    opacity: visible ? 0 : 1,
+    opacity: visible ? 1 : 0,
     config: { duration: 3000 },
     onRest: () => {
-      if (visible) {
+      if (!visible) {
         setShouldUnmount(true);
       }
     },
