@@ -20,7 +20,7 @@ import Navigation from './Navigation.jsx'
 
 export default function WebGLCanvas()
 {
-    const cameraSnap = useSnapshot(cameraState);
+    //const cameraSnap = useSnapshot(cameraState);
     const pagesSnap = useSnapshot(pagesState);
 
 
