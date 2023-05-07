@@ -13,11 +13,29 @@ const pageData = {
     cameraPosition: [-300, 140, 100],
   },
   EasyUpgrade:{
-      hash: "#easy_upgrade_to_water_reuse.html",
-      name: "EasyUpgrade",
+    hash: "#easy_upgrade_to_water_reuse.html",
+    name: "EasyUpgrade",
+    camera:{
       cameraTarget: [0, 0, 0],
       cameraPosition: [-300, 140, 100],
     },
+    button:{
+      position: [-54.85, 7.54, 7.3],
+      wrapperClass: "html3dText",
+      distanceFactor: 220,
+      src: "./img/Button_grau.png",
+      alt: "plus",
+      textContent: "Easy upgrade to water re-use",
+      draggable: false
+    },
+    video:{
+        width: 30,
+        height: 40,
+        position: [-54.85, 7.54, 7.3],
+        src: "/path/to/your/video.mp4",
+    }
+    //state?
+  },
   SmartAdaptive:{
       hash: "#smart_adaptive_process.html",
       name: "SmartAdaptive",
