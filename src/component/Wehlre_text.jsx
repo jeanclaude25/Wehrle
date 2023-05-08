@@ -1,7 +1,7 @@
 import { Html, Text } from '@react-three/drei';
 import VideoPlane from './VideoPlane';
 import { pageData } from '../store/store';
-import { pagesState } from '../store';
+import { changeHash, pagesState } from '../store';
 import { useSnapshot } from 'valtio';
 import React from 'react';
 
@@ -11,8 +11,11 @@ export default function Wehrle_text (){
 
 
     const click = (e) => {
-        console.log(e)
-        //changeHash(pageData.Intro)
+        Object.keys(pageData).map((key) => {
+            if(pageData[key].name === e){
+                changeHash(pageData[key])
+            }
+        })
      }
  
 

@@ -27,6 +27,13 @@ export default function Navigation(){
     useEffect(()=>{
         console.log("execute " + hash)
         // comparer le hash avec pageData et trouver l'action
+        Object.keys(pageData).map((key) => {
+            if(pageData[key].hash === hash){
+                //changeHash(pageData[key])
+                console.log(pageData[key])
+                moveCameraTo(pageData[key].camera.cameraPosition,pageData[key].camera.cameraTarget)
+            }
+        })
     },[hash])
 
 
