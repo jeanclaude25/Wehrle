@@ -1,27 +1,31 @@
 import { Html, Text } from '@react-three/drei';
 import VideoPlane from './VideoPlane';
 import { pageData } from '../store/store';
+import { pagesState } from '../store';
+import { useSnapshot } from 'valtio';
+import React from 'react';
 
-export default function Wehrle_text (props){
-    const distanceFactor = 220;
-    const distanceFactorLevel2 = 120;
-
+export default function Wehrle_text (){
+    
+    const pagesSnap = useSnapshot(pagesState);
 
 
     const click = (e) => {
-        // console.log(e)
-        //props.props(e)
+        console.log(e)
+        //changeHash(pageData.Intro)
      }
  
 
     return(
         <>
+        {/* {pagesSnap.IntroTextVisibility?<></>:<></>} */}
+        
         {Object.keys(pageData).map((key) => {
         return (
-            <>
+            <React.Fragment key={pageData[key].name}>
             <Html
             key={pageData[key].name}
-            position={pageData[key].button.posision}
+            position={pageData[key].button.position}
             wrapperClass= {pageData[key].button.wrapperClass}
             distanceFactor={pageData[key].button.distanceFactor}
             center>
@@ -36,9 +40,11 @@ export default function Wehrle_text (props){
             <VideoPlane url={pageData[key].video.src} width={pageData[key].video.width} height={pageData[key].video.height} pos={pageData[key].video.position}/>
             :<></>
             }
-            </>
+            </React.Fragment>
         );
       })}
+
+
 
 
 </>

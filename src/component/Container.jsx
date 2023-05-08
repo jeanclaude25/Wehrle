@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useSpring, animated } from "@react-spring/three";
+import { useSnapshot } from "valtio";
+import { pagesState } from "../store";
 
-export default function Container({visible}) {
-
-  const { nodes, materials } = useGLTF("./container.glb");
+export default function Container() {
+  
+  const pagesSnap = useSnapshot(pagesState);
   const [shouldUnmount, setShouldUnmount] = useState(false);
+  const visible = pagesSnap.containerVisibility
 
   const { opacity } = useSpring({
     opacity: visible ? 1 : 0,
