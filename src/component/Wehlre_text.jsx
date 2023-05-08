@@ -20,7 +20,7 @@ export default function Wehrle_text (props){
         return (
             <>
             <Html
-            position={pageData[key].button.posision}
+            position={pageData[key].button.position}
             wrapperClass= {pageData[key].button.wrapperClass}
             distanceFactor={pageData[key].button.distanceFactor}
             center>
