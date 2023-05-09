@@ -10,8 +10,6 @@ import Wehrle_text from './component/Wehlre_text.jsx'
 import WaterOb from './shaderMaterials/WaterOb.js'
 import Camera from './component/Camera.jsx'
 import { Lights } from './component/Lights.jsx'
-import { useSnapshot } from "valtio";
-import { cameraState, pagesState } from './store/index.js'
 import Debug from './component/Debug.jsx'
 import Container from './component/Container.jsx'
 import Navigation from './Navigation.jsx'
@@ -20,8 +18,6 @@ import Navigation from './Navigation.jsx'
 
 export default function WebGLCanvas()
 {
-    const cameraSnap = useSnapshot(cameraState);
-    const pagesSnap = useSnapshot(pagesState);
 
 
     return <>
@@ -37,10 +33,10 @@ export default function WebGLCanvas()
         
 
         <Suspense fallback={<></>}>
-        <Container visible={pagesSnap.containerVisibility}/>
+        <Container/>
             <Lights/>
             <Model/>
-            {pagesSnap.IntroTextVisibility?(<Wehrle_text />):<></>}
+            <Wehrle_text />
             
 
             {/* <WaterOb base={0}/> */}
