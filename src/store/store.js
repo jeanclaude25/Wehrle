@@ -14,7 +14,7 @@ const pageData = {
       cameraPosition: [-300, 140, 100],
     },
     button:{
-      position: [-54.85, 7.54, 7.3],
+      position: [-80, 16, -41],
       wrapperClass: "html3dText",
       distanceFactor: 220,
       src: "./img/Button_grau.png",
@@ -24,12 +24,13 @@ const pageData = {
     },
     
   },
+
   EasyUpgrade:{
     hash: "#easy_upgrade_to_water_reuse.html",
     name: "EasyUpgrade",
     camera:{
-      cameraTarget: [0, 0, 0],
-      cameraPosition: [-300, 140, 100],
+      cameraTarget: [23, 9, 9],
+      cameraPosition: [-143, 16, 0],
     },
     button:{
       position: [-54.85, 7.54, 7.3],
@@ -48,12 +49,13 @@ const pageData = {
     }
     //state?
   },
+
   SmartAdaptive:{
       hash: "#smart_adaptive_process.html",
       name: "SmartAdaptive",
       camera:{
-        cameraTarget: [0, 0, 0],
-        cameraPosition: [-300, 140, 100],
+        cameraTarget: [4.49, 8.97, 49.3],
+        cameraPosition: [-124, 16, 36],
       },
       button:{
         position: [-41.19, 7.54, 44.87],
@@ -71,12 +73,13 @@ const pageData = {
           src: "/path/to/your/video.mp4",
       }
     },
+
   friendlyWehrle:{
       hash: "#friendly_remote_handling.html",
       name: "friendlyWehrle",
       camera:{
-        cameraTarget: [0, 0, 0],
-        cameraPosition: [24.23, 40.62, 100.45],
+        cameraTarget: [80, 47, 90],
+        cameraPosition: [-123, 54, 111],
       },
       button:{
         position: [24.23, 44.62, 100.45],
@@ -95,12 +98,13 @@ const pageData = {
       }
       
     },
+
   MembraneBio:{
       hash: "#membrane_bioreactor.html",
       name: "MembraneBioreactor",
       camera:{
-        cameraTarget: [10, 8, 35],
-        cameraPosition: [-10, 8, 70],
+        cameraTarget: [19.4, -1.5, 58.3],
+        cameraPosition: [-122, 0, 73],
       },
       button:{
         position: [-0.46, 7.54, 58.54],
@@ -112,12 +116,13 @@ const pageData = {
         draggable: false
       },
     },
+
   heavyDutyBiology:{
     hash: "#heavy_duty_biology.html",
     name: "heavyDutyBiology",
     camera: {
-      cameraTarget: [10, 8, 35],
-      cameraPosition: [15, 8, 20],
+      cameraTarget: [0, 0, 0],
+      cameraPosition: [-28, 35, 73],
     },
     button:{
       position: [15, 8, 20],
@@ -128,14 +133,14 @@ const pageData = {
       textContent: "Heavy Duty Biology",
       draggable: false
     },
-    
   },
+
   ultraFiltration:{
     hash: "#ultra_filtration.html",
     name: "ultraFiltration",
     camera:{
-      cameraTarget: [10, 8, 35],
-      cameraPosition: [-10, 8, 70],
+      cameraTarget: [16, 6, 43],
+      cameraPosition: [-28, 35, 92],
     },
     button:{
       position: [8, 0, 45],
@@ -153,12 +158,13 @@ const pageData = {
         src: "/path/to/your/video.mp4",
     }
   },
+
   cleaning:{
     hash: "#cleaning.html",
     name: "cleaning",
     camera:{
-      cameraTarget: [10, 8, 35],
-      cameraPosition: [-10, 8, 70],
+      cameraTarget: [15, -1.4, 56.8],
+      cameraPosition: [-28, 16.7, 55],
     },
     button:{
       position: [8, 0, 60],
